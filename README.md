@@ -12,7 +12,7 @@ Every result is exact: no floating-point approximation of a root of unity is use
 
 ## Contents
 
-The theory is developed across six parts in [`theory/`](theory):
+The theory is developed across eight parts in [`theory/`](theory):
 
 | Part | File | Scope |
 |---|---|---|
@@ -22,6 +22,8 @@ The theory is developed across six parts in [`theory/`](theory):
 | IV | [`CCA_04_Cyclotomic_Cumulants_and_Reciprocity.md`](theory/CCA_04_Cyclotomic_Cumulants_and_Reciprocity.md) | Logarithmic local germs, cyclotomic cumulant kernels, reciprocity, the `d=2` even-germ theorem, complex chirality for `d>=3`, the Spectral Visibility Theorem |
 | V | [`CCA_05_Differential_Cyclic_Sieving_and_Orbit_Jets.md`](theory/CCA_05_Differential_Cyclic_Sieving_and_Orbit_Jets.md) | Canonical orbit polynomials, the cyclic sieving phenomenon as a congruence, differential (higher-jet) cyclic sieving, fixed-content word applications |
 | VI | [`CCA_06_Applications_Compressed_Computation_and_Certificates.md`](theory/CCA_06_Applications_Compressed_Computation_and_Certificates.md) | Turning the theory into algorithms: instant cyclotomic valuation, stable Gaussian gcd certificates, non-expanding cumulant computation, exact collision certificates |
+| VII | [`CCA_07_External_Applications_and_Research_Program.md`](theory/CCA_07_External_Applications_and_Research_Program.md) | Transfer to external domains: finite geometry, subspace codes, design obstructions, structured prime-factor search, statistical auditing, formal verification |
+| VIII | [`CCA_08_Global_Cyclotomic_Contact_Budget_and_Finite_Determination.md`](theory/CCA_08_Global_Cyclotomic_Contact_Budget_and_Finite_Determination.md) | Global conservation of cyclotomic contact, weighted contact spectra, sharp finite determination by root-of-unity jets, bounded-span identity certificates |
 
 Each part is proof-complete and states its dependencies on earlier parts, its theorem inventory, and its open boundaries at the end.
 
@@ -33,6 +35,27 @@ Each part is proof-complete and states its dependencies on earlier parts, its th
 - **Cyclotomic cumulants**: every compressed factorial quotient has an exact logarithmic local expansion at any root of unity, governed by a universal kernel built from polylogarithms at roots of unity and Bernoulli numbers.
 - **Differential cyclic sieving**: ordinary cyclic sieving only matches values at roots of unity; this theory extends it to a full hierarchy of matching Euler-derivative jets, with an exact congruence-mod-`N` theorem bridging graded and orbit-theoretic jets.
 
+## Implementation
+
+The `ccat` package (in [`src/ccat`](src/ccat)) implements the **valuation layer**: the non-expanding cyclotomic-valuation theorems of Parts I and II, plus the defect statement of Part III — deliberately the smallest coherent, independently-useful slice of the theory, shaped so it could plausibly become a future contribution to a project like SageMath. It does **not** implement local residuals, Euler jets, cumulants, reciprocity/chirality, or differential cyclic sieving (the rest of Part III, and Parts IV–VIII) — that is future work.
+
+| Function | Theorem |
+|---|---|
+| `cyclotomic_valuation_q_factorial_quotient` | Theorem 4.2, CCA_01 |
+| `q_binomial_cyclotomic_valuation` | Theorem 5.1, CCA_01 |
+| `q_lucas_fingerprint`, `contextual_collapse` | Theorem 6.3 + Project Theorem 6.5, CCA_01 |
+| `simple_collision_valuation` | Project Theorem 3.4 + Correction 3.5, CCA_02 |
+| `stable_content`, `stable_spacing` | Project Theorems 5.1 and 6.1, CCA_02 |
+| `stable_integer_spacing` | Project Theorems 9.1, 13.1, 15.1, CCA_02 |
+| `q_multinomial_cyclotomic_valuation` | Project Theorem 3.1, CCA_03 |
+
+Every formula is exact (integer/rational arithmetic only, no floating point) and, except for the q-Lucas fingerprint, computed directly from compressed integer parameters without ever constructing or expanding a polynomial — correctness and runtime depend only on the bit length of the inputs. The package itself has zero runtime dependencies; `sympy` is used only in the test suite as an independent brute-force oracle.
+
+```
+pip install -e '.[dev]'
+pytest
+```
+
 ## Status
 
-This is a mathematics monograph, not (yet) a software package. Part VI specifies the algorithms, data structures, and API surface (`cyclotomic_valuation`, `q_multinomial_defect`, `cyclotomic_cumulants`, `cyclotomic_collision_certificate`, `stable_gaussian_content`, etc.) that the theory supports, as a blueprint for an eventual exact-arithmetic implementation (e.g. as a SageMath/OSCAR contribution). No implementation currently exists in this repository.
+Parts I, II, and the defect statement of III have a working, tested implementation (see above). The rest of the monograph — local residuals, jets, cumulants, reciprocity, differential cyclic sieving, and the external-application chapters — remains theory only, in `theory/`, pending future implementation phases.
