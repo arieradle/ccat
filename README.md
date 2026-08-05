@@ -12,7 +12,7 @@ Every result is exact: no floating-point approximation of a root of unity is use
 
 ## Contents
 
-The theory is developed across eight parts in [`theory/`](theory):
+The theory is developed across thirteen parts in [`theory/`](theory) (math is written in standard `$...$` / `$$...$$` LaTeX, so it renders directly on GitHub):
 
 | Part | File | Scope |
 |---|---|---|
@@ -24,6 +24,11 @@ The theory is developed across eight parts in [`theory/`](theory):
 | VI | [`CCA_06_Applications_Compressed_Computation_and_Certificates.md`](theory/CCA_06_Applications_Compressed_Computation_and_Certificates.md) | Turning the theory into algorithms: instant cyclotomic valuation, stable Gaussian gcd certificates, non-expanding cumulant computation, exact collision certificates |
 | VII | [`CCA_07_External_Applications_and_Research_Program.md`](theory/CCA_07_External_Applications_and_Research_Program.md) | Transfer to external domains: finite geometry, subspace codes, design obstructions, structured prime-factor search, statistical auditing, formal verification |
 | VIII | [`CCA_08_Global_Cyclotomic_Contact_Budget_and_Finite_Determination.md`](theory/CCA_08_Global_Cyclotomic_Contact_Budget_and_Finite_Determination.md) | Global conservation of cyclotomic contact, weighted contact spectra, sharp finite determination by root-of-unity jets, bounded-span identity certificates |
+| IX | [`CCA_09_Cyclotomic_Hermite_Interpolation_and_Optimal_Reconstruction.md`](theory/CCA_09_Cyclotomic_Hermite_Interpolation_and_Optimal_Reconstruction.md) | The converse of Part VIII's budget: cyclotomic Hermite interpolation, exact reconstruction from finite jet packets, explicit Chinese-remainder reconstruction, optimality, adaptive reconstruction, two-sided identity certificates |
+| X | [`CCA_10_Reciprocal_Cyclotomic_Hermite_Interpolation_and_Half_Budget_Reconstruction.md`](theory/CCA_10_Reciprocal_Cyclotomic_Hermite_Interpolation_and_Half_Budget_Reconstruction.md) | Reciprocal-polynomial cores, ramification at `q=±1`, real-cyclotomic Hermite interpolation, the reciprocal contact budget and half-budget finite determination, Gaussian-multinomial consequences |
+| XI | [`CCA_11_Sparse_Cyclotomic_Contact_Prony_Reconstruction_and_Compressed_Identity_Testing.md`](theory/CCA_11_Sparse_Cyclotomic_Contact_Prony_Reconstruction_and_Compressed_Identity_Testing.md) | Sparse Laurent polynomials, degree-independent contact bounds, optimal sparse identity testing, exact Prony reconstruction from Euler moments, cyclotomic de-aliasing, hybrid degree-sparsity certificates |
+| XII | [`CCA_12_Noetherian_Multiplicity_Bounds_and_Arbitrary_Rank_Factorial_Circuit_Determination.md`](theory/CCA_12_Noetherian_Multiplicity_Bounds_and_Arbitrary_Rank_Factorial_Circuit_Determination.md) | Sums of arbitrary compressed `q`-factorial quotients, Noetherian coefficient ideals, Bautin-type multiplicity bounds, arbitrary-rank finite determination, affine-line factorial circuits |
+| XIII | [`CCA_13_Sharp_Two_Term_and_One_Endpoint_Bounds_and_Effective_Base_Cases.md`](theory/CCA_13_Sharp_Two_Term_and_One_Endpoint_Bounds_and_Effective_Base_Cases.md) | Positive-endpoint local normal forms, exact two-term factorial-circuit collisions, exact arbitrary-rank one-endpoint capacity, deterministic bit-polynomial identity tests for the resulting effective subclasses |
 
 Each part is proof-complete and states its dependencies on earlier parts, its theorem inventory, and its open boundaries at the end.
 
@@ -37,7 +42,7 @@ Each part is proof-complete and states its dependencies on earlier parts, its th
 
 ## Implementation
 
-The `ccat` package (in [`src/ccat`](src/ccat)) implements the **valuation layer**: the non-expanding cyclotomic-valuation theorems of Parts I and II, plus the defect statement of Part III — deliberately the smallest coherent, independently-useful slice of the theory, shaped so it could plausibly become a future contribution to a project like SageMath. It does **not** implement local residuals, Euler jets, cumulants, reciprocity/chirality, or differential cyclic sieving (the rest of Part III, and Parts IV–VIII) — that is future work.
+The `ccat` package (in [`src/ccat`](src/ccat)) implements the **valuation layer**: the non-expanding cyclotomic-valuation theorems of Parts I and II, plus the defect statement of Part III — deliberately the smallest coherent, independently-useful slice of the theory, shaped so it could plausibly become a future contribution to a project like SageMath. It does **not** implement local residuals, Euler jets, cumulants, reciprocity/chirality, differential cyclic sieving, or any of the contact-budget/interpolation/sparsity material (the rest of Part III, and Parts IV–XIII) — that is future work.
 
 | Function | Theorem |
 |---|---|
@@ -58,4 +63,4 @@ pytest
 
 ## Status
 
-Parts I, II, and the defect statement of III have a working, tested implementation (see above). The rest of the monograph — local residuals, jets, cumulants, reciprocity, differential cyclic sieving, and the external-application chapters — remains theory only, in `theory/`, pending future implementation phases.
+Parts I, II, and the defect statement of III have a working, tested implementation (see above). The rest of the monograph — local residuals, jets, cumulants, reciprocity, differential cyclic sieving, contact budgets and Hermite reconstruction, sparse/Prony reconstruction, Noetherian multiplicity bounds, and the external-application chapters — remains theory only, in `theory/`, pending future implementation phases.
