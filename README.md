@@ -12,7 +12,7 @@ Every result is exact: no floating-point approximation of a root of unity is use
 
 ## Contents
 
-The theory is developed across thirteen parts in [`theory/`](theory) (math is written in standard `$...$` / `$$...$$` LaTeX, so it renders directly on GitHub):
+The theory is developed across fifteen parts in [`theory/`](theory) (math is written in standard `$...$` / `$$...$$` LaTeX, so it renders directly on GitHub):
 
 | Part | File | Scope |
 |---|---|---|
@@ -29,6 +29,8 @@ The theory is developed across thirteen parts in [`theory/`](theory) (math is wr
 | XI | [`CCA_11_Sparse_Cyclotomic_Contact_Prony_Reconstruction_and_Compressed_Identity_Testing.md`](theory/CCA_11_Sparse_Cyclotomic_Contact_Prony_Reconstruction_and_Compressed_Identity_Testing.md) | Sparse Laurent polynomials, degree-independent contact bounds, optimal sparse identity testing, exact Prony reconstruction from Euler moments, cyclotomic de-aliasing, hybrid degree-sparsity certificates |
 | XII | [`CCA_12_Noetherian_Multiplicity_Bounds_and_Arbitrary_Rank_Factorial_Circuit_Determination.md`](theory/CCA_12_Noetherian_Multiplicity_Bounds_and_Arbitrary_Rank_Factorial_Circuit_Determination.md) | Sums of arbitrary compressed `q`-factorial quotients, Noetherian coefficient ideals, Bautin-type multiplicity bounds, arbitrary-rank finite determination, affine-line factorial circuits |
 | XIII | [`CCA_13_Sharp_Two_Term_and_One_Endpoint_Bounds_and_Effective_Base_Cases.md`](theory/CCA_13_Sharp_Two_Term_and_One_Endpoint_Bounds_and_Effective_Base_Cases.md) | Positive-endpoint local normal forms, exact two-term factorial-circuit collisions, exact arbitrary-rank one-endpoint capacity, deterministic bit-polynomial identity tests for the resulting effective subclasses |
+| XIV | [`CCA_14_Gaussian_Jet_Vandermonde_Rigidity_and_Arbitrary_Rank_Row_Determination.md`](theory/CCA_14_Gaussian_Jet_Vandermonde_Rigidity_and_Arbitrary_Rank_Row_Determination.md) | Collapse to the spectral coordinate `E=k(n-k)`, the polynomial-cumulant Jet-Vandermonde principle, an exact Gaussian Wronskian determinant, sharp arbitrary-rank contact bounds, one-point reconstruction, degree-free identity certificates for Gaussian-row circuits |
+| XV | [`CCA_15_Global_Cyclotomic_Grassmann_Wronskian_Budgets_and_Ramification.md`](theory/CCA_15_Global_Cyclotomic_Grassmann_Wronskian_Budgets_and_Ramification.md) | Polynomial subspaces in Laurent windows, ordinary and Euler Wronskians, exact projective ramification conservation, Galois-weighted cyclotomic budgets, cumulative jet-rank defects, Grassmannian reconstruction, exact rank certificates |
 
 Each part is proof-complete and states its dependencies on earlier parts, its theorem inventory, and its open boundaries at the end.
 
@@ -42,7 +44,7 @@ Each part is proof-complete and states its dependencies on earlier parts, its th
 
 ## Implementation
 
-The `ccat` package (in [`src/ccat`](src/ccat)) implements the **valuation layer**: the non-expanding cyclotomic-valuation theorems of Parts I and II, plus the defect statement of Part III — deliberately the smallest coherent, independently-useful slice of the theory, shaped so it could plausibly become a future contribution to a project like SageMath. It does **not** implement local residuals, Euler jets, cumulants, reciprocity/chirality, differential cyclic sieving, or any of the contact-budget/interpolation/sparsity material (the rest of Part III, and Parts IV–XIII) — that is future work.
+The `ccat` package (in [`src/ccat`](src/ccat)) implements the **valuation layer**: the non-expanding cyclotomic-valuation theorems of Parts I and II, plus the defect statement of Part III — deliberately the smallest coherent, independently-useful slice of the theory, shaped so it could plausibly become a future contribution to a project like SageMath. It does **not** implement local residuals, Euler jets, cumulants, reciprocity/chirality, differential cyclic sieving, or any of the contact-budget/interpolation/sparsity material (the rest of Part III, and Parts IV–XV) — that is future work.
 
 | Function | Theorem |
 |---|---|

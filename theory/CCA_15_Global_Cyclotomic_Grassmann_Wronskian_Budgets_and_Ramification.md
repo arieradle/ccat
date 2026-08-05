@@ -14,102 +14,102 @@ Part II established exact Gaussian collision arithmetic. It identified simple ro
 
 Part VIII established the rank-one global contact law
 
-\[
+$$
 \sum_{d\ge1}\varphi(d)v_{\Phi_d}(P)
 \le
 \operatorname{span}(P).
-\]
+$$
 
 Part XIV established arbitrary-rank rigidity for a selected Gaussian row at the single context
 
-\[
+$$
 q=1.
-\]
+$$
 
 If
 
-\[
+$$
 V
 =
 \operatorname{span}
 \left\{
 {n\brack k_1}_q,\ldots,{n\brack k_m}_q
 \right\},
-\]
+$$
 
-with distinct lower-half positions, then the vanishing orders attained by nonzero elements of \(V\) at \(q=1\) are exactly
+with distinct lower-half positions, then the vanishing orders attained by nonzero elements of $V$ at $q=1$ are exactly
 
-\[
+$$
 0,1,\ldots,m-1.
-\]
+$$
 
 The present chapter unifies these three levels by replacing one polynomial or one pair with an entire finite-dimensional polynomial space.
 
 Let
 
-\[
+$$
 V\subseteq \mathbb Q[q,q^{-1}]
-\]
+$$
 
-be an \(m\)-dimensional space contained in a Laurent support window of width \(N\). At a point \(p\ne0\), let
+be an $m$-dimensional space contained in a Laurent support window of width $N$. At a point $p\ne0$, let
 
-\[
+$$
 0\le a_0(p)<a_1(p)<\cdots<a_{m-1}(p)
-\]
+$$
 
-be the local vanishing sequence of \(V\). Define its ramification weight by
+be the local vanishing sequence of $V$. Define its ramification weight by
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_p(V)
 =
 \sum_{i=0}^{m-1}\bigl(a_i(p)-i\bigr).
 }
-\]
+$$
 
 The first main theorem identifies this weight with a Wronskian zero:
 
-\[
+$$
 \boxed{
 \operatorname{ord}_{q=p}W_V(q)
 =
 \operatorname{Ram}_p(V).
 }
-\]
+$$
 
 The projective Wronskian has a fixed total zero budget. After shifting the Laurent window to
 
-\[
+$$
 \mathbb Q[q]_{\le N},
-\]
+$$
 
 one obtains the exact conservation law
 
-\[
+$$
 \boxed{
 \sum_{p\in\mathbb P^1(\overline{\mathbb Q})}
 \operatorname{Ram}_p(V)
 =
 m(N-m+1).
 }
-\]
+$$
 
-For a rational space, every primitive \(d\)-th root has the same ramification weight. Therefore the cyclotomic part of this conservation law is
+For a rational space, every primitive $d$-th root has the same ramification weight. Therefore the cyclotomic part of this conservation law is
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)\operatorname{Ram}_d(V)
 \le
 m(N-m+1),
 }
-\]
+$$
 
-where \(\operatorname{Ram}_d(V)\) is the weight at one primitive \(d\)-th root.
+where $\operatorname{Ram}_d(V)$ is the weight at one primitive $d$-th root.
 
 A sharper affine form is obtained from the lower and upper exponent sequences of the space:
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)\operatorname{Ram}_d(V)
@@ -118,34 +118,34 @@ A sharper affine form is obtained from the lower and upper exponent sequences of
 =
 \sum_{i=0}^{m-1}(\beta_i-\alpha_i).
 }
-\]
+$$
 
 Here
 
-\[
+$$
 0\le\alpha_0<\cdots<\alpha_{m-1}\le N
-\]
+$$
 
 is the lower exponent sequence and
 
-\[
+$$
 0\le\beta_0<\cdots<\beta_{m-1}\le N
-\]
+$$
 
 is the upper exponent sequence.
 
 The local weight also has an exact jet-rank form. If
 
-\[
+$$
 J_{p,r}:V\longrightarrow\overline{\mathbb Q}^{\,r},
 \qquad
 f\longmapsto
 \bigl(f(p),Df(p),\ldots,D^{r-1}f(p)\bigr),
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_p(V)
 =
@@ -154,42 +154,42 @@ then
 \min(m,r)-\operatorname{rank}J_{p,r}
 \right).
 }
-\]
+$$
 
 Thus the global theorem may be read as
 
-\[
+$$
 \boxed{
 \text{total Galois-weighted cumulative jet-rank defect}
 \le
 \text{one finite Grassmannian budget}.
 }
-\]
+$$
 
-Finally, if \(c_d(V)\) is the common \(\Phi_d\)-depth of the entire space and \(\rho_d(V)\) is the residual ramification after this mandatory content is removed, then
+Finally, if $c_d(V)$ is the common $\Phi_d$-depth of the entire space and $\rho_d(V)$ is the residual ramification after this mandatory content is removed, then
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)
 =
 m c_d(V)+\rho_d(V),
 }
-\]
+$$
 
 and hence
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)
 \bigl(mc_d(V)+\rho_d(V)\bigr)
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 This is the sought synthesis:
 
-\[
+$$
 \boxed{
 \text{rank}\times\text{mandatory cyclotomic content}
 \;+
@@ -197,7 +197,7 @@ This is the sought synthesis:
 \;\le
 \text{global Wronskian budget}.
 }
-\]
+$$
 
 The labels used below are:
 
@@ -219,15 +219,15 @@ Throughout, the coefficient field has characteristic zero. Rationality is impose
 
 Fix integers
 
-\[
+$$
 L\in\mathbb Z,
 \qquad
 N\ge0.
-\]
+$$
 
 Define the Laurent window
 
-\[
+$$
 \boxed{
 \mathcal A_{L,N}
 =
@@ -236,72 +236,72 @@ q^L\mathbb Q[q]_{\le N}
 \operatorname{span}_{\mathbb Q}
 \{q^L,q^{L+1},\ldots,q^{L+N}\}.
 }
-\]
+$$
 
 Its dimension is
 
-\[
+$$
 N+1.
-\]
+$$
 
 Let
 
-\[
+$$
 V\subseteq\mathcal A_{L,N}
-\]
+$$
 
-be an \(m\)-dimensional subspace. Necessarily
+be an $m$-dimensional subspace. Necessarily
 
-\[
+$$
 1\le m\le N+1.
-\]
+$$
 
-Multiplication by \(q^{-L}\) gives an isomorphism
+Multiplication by $q^{-L}$ gives an isomorphism
 
-\[
+$$
 V\longrightarrow \widetilde V=q^{-L}V
 \subseteq\mathbb Q[q]_{\le N}.
-\]
+$$
 
 At every nonzero point, this monomial shift is multiplication by a local unit. Hence it does not change any local vanishing sequence or any cyclotomic ramification weight.
 
 We will therefore prove the projective statements for
 
-\[
+$$
 V\subseteq\mathbb Q[q]_{\le N}
-\]
+$$
 
 and transfer them back to Laurent windows by monomial shift.
 
 ## 1.2 Lower exponent sequence
 
-For a nonzero polynomial \(f\), write
+For a nonzero polynomial $f$, write
 
-\[
+$$
 \operatorname{ord}_0(f)=v_q(f).
-\]
+$$
 
 ### Definition 1.1 — Lower exponent sequence
 
-The lower exponent sequence of \(V\subseteq\mathbb Q[q]_{\le N}\) is the strictly increasing sequence
+The lower exponent sequence of $V\subseteq\mathbb Q[q]_{\le N}$ is the strictly increasing sequence
 
-\[
+$$
 \boxed{
 0\le\alpha_0<\alpha_1<\cdots<\alpha_{m-1}\le N
 }
-\]
+$$
 
 for which there exists a basis
 
-\[
+$$
 f_0,\ldots,f_{m-1}
-\]
+$$
 
 satisfying
 
-\[
+$$
 \operatorname{ord}_0(f_i)=\alpha_i.
-\]
+$$
 
 Such a basis is called a **lower-adapted basis**.
 
@@ -309,25 +309,25 @@ Such a basis is called a **lower-adapted basis**.
 
 ### Definition 1.2 — Upper exponent sequence
 
-The upper exponent sequence of \(V\) is the strictly increasing sequence
+The upper exponent sequence of $V$ is the strictly increasing sequence
 
-\[
+$$
 \boxed{
 0\le\beta_0<\beta_1<\cdots<\beta_{m-1}\le N
 }
-\]
+$$
 
 for which there exists a basis
 
-\[
+$$
 g_0,\ldots,g_{m-1}
-\]
+$$
 
 satisfying
 
-\[
+$$
 \deg g_i=\beta_i.
-\]
+$$
 
 Such a basis is called an **upper-adapted basis**.
 
@@ -339,51 +339,51 @@ Every finite-dimensional polynomial space has unique lower and upper exponent se
 
 Write the coefficient vectors of any basis in the monomial basis
 
-\[
+$$
 1,q,\ldots,q^N.
-\]
+$$
 
-Row reduction from the lowest exponent upward produces a basis with distinct first nonzero positions. These pivot positions are the \(\alpha_i\). Reduced-row-echelon uniqueness shows that the set of pivot positions is independent of the starting basis.
+Row reduction from the lowest exponent upward produces a basis with distinct first nonzero positions. These pivot positions are the $\alpha_i$. Reduced-row-echelon uniqueness shows that the set of pivot positions is independent of the starting basis.
 
-Row reduction from the highest exponent downward produces a basis with distinct last nonzero positions. These positions are the \(\beta_i\), and the same uniqueness argument applies. ∎
+Row reduction from the highest exponent downward produces a basis with distinct last nonzero positions. These positions are the $\beta_i$, and the same uniqueness argument applies. ∎
 
 ### Corollary 1.4 — Endpoint bounds
 
 One has
 
-\[
+$$
 \boxed{
 \alpha_i\ge i,
 \qquad
 \beta_i\le N-m+1+i.
 }
-\]
+$$
 
 Consequently,
 
-\[
+$$
 \boxed{
 \sum_{i=0}^{m-1}(\beta_i-\alpha_i)
 \le
 m(N-m+1).
 }
-\]
+$$
 
 #### Proof
 
-The \(\alpha_i\) are \(m\) distinct nonnegative integers, so the \(i\)-th smallest is at least \(i\).
+The $\alpha_i$ are $m$ distinct nonnegative integers, so the $i$-th smallest is at least $i$.
 
-The \(\beta_i\) are \(m\) distinct integers at most \(N\). The \(i\)-th smallest is therefore at most the \(i\)-th member of the largest possible set
+The $\beta_i$ are $m$ distinct integers at most $N$. The $i$-th smallest is therefore at most the $i$-th member of the largest possible set
 
-\[
+$$
 N-m+1,N-m+2,\ldots,N.
-\]
+$$
 
 Thus
 
-\[
+$$
 \beta_i\le N-m+1+i.
-\]
+$$
 
 Subtract and sum. ∎
 
@@ -391,112 +391,112 @@ Subtract and sum. ∎
 
 # 2. Local vanishing sequences and jet filtrations
 
-Fix a field extension \(K/\mathbb Q\), a point
+Fix a field extension $K/\mathbb Q$, a point
 
-\[
+$$
 p\in K,
-\]
+$$
 
-and an \(m\)-dimensional space
+and an $m$-dimensional space
 
-\[
+$$
 V_K=V\otimes_{\mathbb Q}K.
-\]
+$$
 
-For a nonzero polynomial \(f\), let
+For a nonzero polynomial $f$, let
 
-\[
+$$
 \operatorname{ord}_p(f)
-\]
+$$
 
-be its zero multiplicity at \(p\).
+be its zero multiplicity at $p$.
 
 ## 2.1 The osculating filtration
 
-For \(r\ge0\), define
+For $r\ge0$, define
 
-\[
+$$
 \boxed{
 V_{\ge r}(p)
 =
 \{f\in V_K:\operatorname{ord}_p(f)\ge r\}.
 }
-\]
+$$
 
 Then
 
-\[
+$$
 V_K=V_{\ge0}(p)
 \supseteq
 V_{\ge1}(p)
 \supseteq
 V_{\ge2}(p)
 \supseteq\cdots.
-\]
+$$
 
 The quotient
 
-\[
+$$
 (q-p)^rK[q]_{(q-p)}
 \big/
 (q-p)^{r+1}K[q]_{(q-p)}
-\]
+$$
 
-is one-dimensional. Therefore the dimension of \(V_{\ge r}(p)\) can drop by at most one when \(r\) increases by one.
+is one-dimensional. Therefore the dimension of $V_{\ge r}(p)$ can drop by at most one when $r$ increases by one.
 
 ### Definition 2.1 — Local vanishing sequence
 
-The local vanishing sequence of \(V\) at \(p\) is the unique strictly increasing sequence
+The local vanishing sequence of $V$ at $p$ is the unique strictly increasing sequence
 
-\[
+$$
 \boxed{
 0\le a_0(p)<a_1(p)<\cdots<a_{m-1}(p)
 }
-\]
+$$
 
 such that there exists a basis
 
-\[
+$$
 f_0,\ldots,f_{m-1}
-\]
+$$
 
 with
 
-\[
+$$
 \operatorname{ord}_p(f_i)=a_i(p).
-\]
+$$
 
-Such a basis is called **adapted at \(p\)**.
+Such a basis is called **adapted at $p$**.
 
 ### Classical Lemma 2.2 — Existence of an adapted local basis
 
 The local vanishing sequence exists and is unique. Moreover,
 
-\[
+$$
 \boxed{a_i(p)\ge i.}
-\]
+$$
 
 #### Proof
 
 Expand each element in the local coordinate
 
-\[
+$$
 x=q-p.
-\]
+$$
 
-Row reduction on the infinite Taylor coefficient matrix produces a basis with distinct pivot orders. Since \(V\) is finite-dimensional, only finitely many columns are required before all pivots appear. These pivot orders are the \(a_i(p)\).
+Row reduction on the infinite Taylor coefficient matrix produces a basis with distinct pivot orders. Since $V$ is finite-dimensional, only finitely many columns are required before all pivots appear. These pivot orders are the $a_i(p)$.
 
-Equivalently, define \(a_i(p)\) as the unique integers for which
+Equivalently, define $a_i(p)$ as the unique integers for which
 
-\[
+$$
 \dim V_{\ge r}(p)
 =
 \#\{i:a_i(p)\ge r\}.
-\]
+$$
 
 The filtration determines the sequence uniquely.
 
-Since the sequence consists of distinct nonnegative integers, its \(i\)-th member is at least \(i\). ∎
+Since the sequence consists of distinct nonnegative integers, its $i$-th member is at least $i$. ∎
 
 ## 2.2 Ramification weight
 
@@ -504,94 +504,94 @@ Since the sequence consists of distinct nonnegative integers, its \(i\)-th membe
 
 Define
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_p(V)
 =
 \sum_{i=0}^{m-1}\bigl(a_i(p)-i\bigr).
 }
-\]
+$$
 
 Every summand is nonnegative, so
 
-\[
+$$
 \operatorname{Ram}_p(V)\ge0.
-\]
+$$
 
-The space is called **unramified at \(p\)** when
+The space is called **unramified at $p$** when
 
-\[
+$$
 \operatorname{Ram}_p(V)=0.
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{
 a_i(p)=i
 \qquad(0\le i<m).
 }
-\]
+$$
 
-This means that the first \(m\) jets at \(p\) form a complete coordinate system on \(V\).
+This means that the first $m$ jets at $p$ form a complete coordinate system on $V$.
 
 ## 2.3 Euler jets
 
-At a nonzero point \(p\), use
+At a nonzero point $p$, use
 
-\[
+$$
 D=q\frac d{dq}.
-\]
+$$
 
-Because \(q\) is a local unit at \(p\), ordinary derivatives and Euler derivatives define the same vanishing filtration.
+Because $q$ is a local unit at $p$, ordinary derivatives and Euler derivatives define the same vanishing filtration.
 
-For \(r\ge1\), define the truncated Euler-jet map
+For $r\ge1$, define the truncated Euler-jet map
 
-\[
+$$
 \boxed{
 J_{p,r}:V_K\longrightarrow K^r,
 \qquad
 f\longmapsto
 \bigl(f(p),Df(p),\ldots,D^{r-1}f(p)\bigr).
 }
-\]
+$$
 
 ### Lemma 2.4 — Jet-kernel formula
 
-\[
+$$
 \boxed{
 \ker J_{p,r}=V_{\ge r}(p).
 }
-\]
+$$
 
 Consequently,
 
-\[
+$$
 \boxed{
 \operatorname{rank}J_{p,r}
 =
 \#\{i:a_i(p)<r\}.
 }
-\]
+$$
 
 #### Proof
 
 The local Euler-jet criterion gives
 
-\[
+$$
 D^j f(p)=0
 \quad(0\le j<r)
 \iff
 \operatorname{ord}_p(f)\ge r.
-\]
+$$
 
 This proves the kernel identity. Rank-nullity and the filtration description in Lemma 2.2 give the rank formula. ∎
 
 ### Project Theorem 2.5 — Cumulative jet-rank defect formula
 
-For every nonzero point \(p\),
+For every nonzero point $p$,
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_p(V)
 =
@@ -600,86 +600,86 @@ For every nonzero point \(p\),
 \min(m,r)-\operatorname{rank}J_{p,r}
 \right).
 }
-\]
+$$
 
 Only finitely many summands are nonzero.
 
 #### Proof
 
-For any nonnegative integer \(a\),
+For any nonnegative integer $a$,
 
-\[
+$$
 a=\sum_{r\ge1}\mathbf 1_{a\ge r}.
-\]
+$$
 
 Therefore
 
-\[
+$$
 \sum_i a_i(p)
 =
 \sum_{r\ge1}\#\{i:a_i(p)\ge r\}
 =
 \sum_{r\ge1}\dim V_{\ge r}(p).
-\]
+$$
 
 Similarly,
 
-\[
+$$
 \sum_{i=0}^{m-1}i
 =
 \sum_{r\ge1}\max(m-r,0).
-\]
+$$
 
 Subtracting gives
 
-\[
+$$
 \operatorname{Ram}_p(V)
 =
 \sum_{r\ge1}
 \left(
 \dim V_{\ge r}(p)-\max(m-r,0)
 \right).
-\]
+$$
 
 By Lemma 2.4,
 
-\[
+$$
 \dim V_{\ge r}(p)=m-\operatorname{rank}J_{p,r}.
-\]
+$$
 
-If \(r\le m\), the summand becomes
+If $r\le m$, the summand becomes
 
-\[
+$$
 r-\operatorname{rank}J_{p,r}.
-\]
+$$
 
-If \(r>m\), it becomes
+If $r>m$, it becomes
 
-\[
+$$
 m-\operatorname{rank}J_{p,r}.
-\]
+$$
 
 Both cases equal
 
-\[
+$$
 \min(m,r)-\operatorname{rank}J_{p,r}.
-\]
+$$
 
-For sufficiently large \(r\), no nonzero element of the finite-degree space vanishes to order \(r\), so \(J_{p,r}\) is injective and has rank \(m\). Hence the sum is finite. ∎
+For sufficiently large $r$, no nonzero element of the finite-degree space vanishes to order $r$, so $J_{p,r}$ is injective and has rank $m$. Hence the sum is finite. ∎
 
 ### Interpretation 2.6
 
-At depth \(r\), an \(m\)-dimensional space can contribute at most
+At depth $r$, an $m$-dimensional space can contribute at most
 
-\[
+$$
 \min(m,r)
-\]
+$$
 
 independent initial-jet coordinates. The deficit from this maximum is
 
-\[
+$$
 \min(m,r)-\operatorname{rank}J_{p,r}.
-\]
+$$
 
 The ramification weight is the cumulative deficit over all depths.
 
@@ -691,13 +691,13 @@ The ramification weight is the cumulative deficit over all depths.
 
 Let
 
-\[
+$$
 f_0,\ldots,f_{m-1}
-\]
+$$
 
-be a basis of \(V\). Define
+be a basis of $V$. Define
 
-\[
+$$
 \boxed{
 W(f_0,\ldots,f_{m-1})(q)
 =
@@ -707,36 +707,36 @@ W(f_0,\ldots,f_{m-1})(q)
 \right)_{
 \substack{0\le j<m\\0\le i<m}}.
 }
-\]
+$$
 
 ### Classical Lemma 3.1 — Basis covariance
 
 If
 
-\[
+$$
 (g_0,\ldots,g_{m-1})
 =(f_0,\ldots,f_{m-1})A
-\]
+$$
 
-for an invertible constant matrix \(A\), then
+for an invertible constant matrix $A$, then
 
-\[
+$$
 \boxed{
 W(g_0,\ldots,g_{m-1})
 =
 \det(A)W(f_0,\ldots,f_{m-1}).
 }
-\]
+$$
 
 #### Proof
 
-The derivative matrix for the \(g_i\) is the derivative matrix for the \(f_i\) multiplied on the right by \(A\). Taking determinants gives the formula. ∎
+The derivative matrix for the $g_i$ is the derivative matrix for the $f_i$ multiplied on the right by $A$. Taking determinants gives the formula. ∎
 
-Thus the Wronskian is defined by the space \(V\) up to a nonzero scalar. We write
+Thus the Wronskian is defined by the space $V$ up to a nonzero scalar. We write
 
-\[
+$$
 W_V(q)
-\]
+$$
 
 for any representative.
 
@@ -744,13 +744,13 @@ for any representative.
 
 In characteristic zero,
 
-\[
+$$
 \boxed{
 W_V\ne0
 \iff
 \dim V=m.
 }
-\]
+$$
 
 #### Proof
 
@@ -758,115 +758,115 @@ Linear dependence plainly forces the Wronskian to vanish.
 
 Conversely, choose an upper-adapted basis with distinct degrees
 
-\[
+$$
 \beta_0<\cdots<\beta_{m-1}.
-\]
+$$
 
-Let \(c_iq^{\beta_i}\) be the leading term of \(f_i\). The leading term of the Wronskian is
+Let $c_iq^{\beta_i}$ be the leading term of $f_i$. The leading term of the Wronskian is
 
-\[
+$$
 \left(
 \prod_i c_i
 \right)
 \det\bigl((\beta_i)_j\bigr)_{0\le j,i<m}
 q^{\sum_i\beta_i-\binom m2},
-\]
+$$
 
 where
 
-\[
+$$
 (\beta)_j
 =
 \beta(\beta-1)\cdots(\beta-j+1).
-\]
+$$
 
 The determinant of the falling-factorial evaluation matrix is the Vandermonde
 
-\[
+$$
 \prod_{i<j}(\beta_j-\beta_i),
-\]
+$$
 
-which is nonzero because the \(\beta_i\) are distinct. Hence the Wronskian is nonzero. ∎
+which is nonzero because the $\beta_i$ are distinct. Hence the Wronskian is nonzero. ∎
 
 ## 3.2 Common-factor law
 
 ### Classical Lemma 3.3 — Wronskian common-factor law
 
-For every nonzero rational function \(h(q)\),
+For every nonzero rational function $h(q)$,
 
-\[
+$$
 \boxed{
 W(hf_0,\ldots,hf_{m-1})
 =
 h(q)^mW(f_0,\ldots,f_{m-1}).
 }
-\]
+$$
 
 #### Proof
 
-For each derivative order \(j\), the Leibniz rule gives
+For each derivative order $j$, the Leibniz rule gives
 
-\[
+$$
 \frac{d^j}{dq^j}(hf_i)
 =
 \sum_{s=0}^{j}
 \binom js h^{(j-s)}f_i^{(s)}.
-\]
+$$
 
-Thus the derivative matrix of \((hf_i)\) is obtained from the derivative matrix of \((f_i)\) by left multiplication by a lower triangular matrix whose diagonal entries are all \(h\). Its determinant is \(h^m\). ∎
+Thus the derivative matrix of $(hf_i)$ is obtained from the derivative matrix of $(f_i)$ by left multiplication by a lower triangular matrix whose diagonal entries are all $h$. Its determinant is $h^m$. ∎
 
 ## 3.3 Euler Wronskian
 
 Define
 
-\[
+$$
 \boxed{
 W_V^{D}(q)
 =
 \det\left(D^j f_i(q)\right)_{
 \substack{0\le j<m\\0\le i<m}}.
 }
-\]
+$$
 
 ### Lemma 3.4 — Euler–ordinary Wronskian relation
 
-\[
+$$
 \boxed{
 W_V^{D}(q)
 =
 q^{\binom m2}W_V(q).
 }
-\]
+$$
 
 #### Proof
 
 The operator identity
 
-\[
+$$
 D^j
 =
 \sum_{s=0}^{j}
 \left\{\begin{matrix}j\\s\end{matrix}\right\}
 q^s\frac{d^s}{dq^s}
-\]
+$$
 
 shows that the Euler derivative matrix is obtained from the ordinary derivative matrix by a lower triangular row transformation. Its diagonal entries are
 
-\[
+$$
 1,q,q^2,\ldots,q^{m-1}.
-\]
+$$
 
 Their product is
 
-\[
+$$
 q^{0+1+\cdots+(m-1)}
 =
 q^{\binom m2}.
-\]
+$$
 
 Taking determinants proves the formula. ∎
 
-At every cyclotomic context, \(q\ne0\), so ordinary and Euler Wronskians have the same local order.
+At every cyclotomic context, $q\ne0$, so ordinary and Euler Wronskians have the same local order.
 
 ---
 
@@ -878,13 +878,13 @@ At every cyclotomic context, \(q\ne0\), so ordinary and Euler Wronskians have th
 
 Let
 
-\[
+$$
 0\le a_0(p)<\cdots<a_{m-1}(p)
-\]
+$$
 
-be the vanishing sequence of \(V\) at a finite point \(p\). Then
+be the vanishing sequence of $V$ at a finite point $p$. Then
 
-\[
+$$
 \boxed{
 \operatorname{ord}_{q=p}W_V(q)
 =
@@ -892,46 +892,46 @@ be the vanishing sequence of \(V\) at a finite point \(p\). Then
 =
 \operatorname{Ram}_p(V).
 }
-\]
+$$
 
 #### Proof
 
-Choose a basis adapted at \(p\). In the local coordinate
+Choose a basis adapted at $p$. In the local coordinate
 
-\[
+$$
 x=q-p,
-\]
+$$
 
 write
 
-\[
+$$
 f_i(q)=c_ix^{a_i}+O(x^{a_i+1}),
 \qquad
 c_i\ne0.
-\]
+$$
 
 Then
 
-\[
+$$
 \frac{d^j f_i}{dq^j}
 =
  c_i(a_i)_j x^{a_i-j}
 +O(x^{a_i-j+1}).
-\]
+$$
 
-Factor \(c_ix^{a_i}\) from column \(i\) and \(x^{-j}\) from row \(j\). The leading term of the determinant is
+Factor $c_ix^{a_i}$ from column $i$ and $x^{-j}$ from row $j$. The leading term of the determinant is
 
-\[
+$$
 \left(\prod_i c_i\right)
 \det\bigl((a_i)_j\bigr)
  x^{\sum_i a_i-\binom m2}.
-\]
+$$
 
 The determinant is the Vandermonde
 
-\[
+$$
 \prod_{i<j}(a_j-a_i),
-\]
+$$
 
 which is nonzero because the vanishing orders are strictly increasing. Hence the displayed exponent is exact. ∎
 
@@ -939,72 +939,72 @@ which is nonzero because the vanishing orders are strictly increasing. Hence the
 
 The following are equivalent:
 
-1. \(V\) is unramified at \(p\);
-2. \(W_V(p)\ne0\);
-3. the first \(m\) ordinary jets at \(p\) have full rank;
-4. if \(p\ne0\), the first \(m\) Euler jets at \(p\) have full rank.
+1. $V$ is unramified at $p$;
+2. $W_V(p)\ne0$;
+3. the first $m$ ordinary jets at $p$ have full rank;
+4. if $p\ne0$, the first $m$ Euler jets at $p$ have full rank.
 
 #### Proof
 
 By Theorem 4.1,
 
-\[
+$$
 W_V(p)\ne0
 \iff
 \operatorname{Ram}_p(V)=0.
-\]
+$$
 
-The determinant defining the Wronskian is precisely the first \(m\)-jet matrix. At a nonzero point, Lemma 3.4 transfers the statement to Euler jets. ∎
+The determinant defining the Wronskian is precisely the first $m$-jet matrix. At a nonzero point, Lemma 3.4 transfers the statement to Euler jets. ∎
 
 ## 4.2 Exact endpoint orders
 
 Let
 
-\[
+$$
 \alpha_0<\cdots<\alpha_{m-1}
-\]
+$$
 
 and
 
-\[
+$$
 \beta_0<\cdots<\beta_{m-1}
-\]
+$$
 
 be the lower and upper exponent sequences.
 
 ### Corollary 4.3 — Exact lower order and degree of the Wronskian
 
-\[
+$$
 \boxed{
  v_q(W_V)
 =
 \sum_i\alpha_i-\binom m2,
 }
-\]
+$$
 
 and
 
-\[
+$$
 \boxed{
 \deg W_V
 =
 \sum_i\beta_i-\binom m2.
 }
-\]
+$$
 
 Consequently,
 
-\[
+$$
 \boxed{
 \operatorname{span}(W_V)
 =
 \sum_{i=0}^{m-1}(\beta_i-\alpha_i).
 }
-\]
+$$
 
 #### Proof
 
-The first formula is Theorem 4.1 at \(p=0\).
+The first formula is Theorem 4.1 at $p=0$.
 
 The degree formula was proved in Lemma 3.2 by using an upper-adapted basis and showing that the leading Vandermonde coefficient is nonzero.
 
@@ -1012,53 +1012,53 @@ Subtracting the lower order from the degree gives the span formula. ∎
 
 ## 4.3 The point at infinity
 
-View \(V\subseteq\mathbb Q[q]_{\le N}\) as a linear series in
+View $V\subseteq\mathbb Q[q]_{\le N}$ as a linear series in
 
-\[
+$$
 H^0(\mathbb P^1,\mathcal O(N)).
-\]
+$$
 
 Use the local coordinate
 
-\[
+$$
 t=q^{-1}
-\]
+$$
 
-at infinity. The section represented by \(f(q)\) becomes
+at infinity. The section represented by $f(q)$ becomes
 
-\[
+$$
 t^Nf(t^{-1}).
-\]
+$$
 
-If \(\deg f=\beta\), its vanishing order at infinity is
+If $\deg f=\beta$, its vanishing order at infinity is
 
-\[
+$$
 N-\beta.
-\]
+$$
 
 Thus the vanishing sequence at infinity is
 
-\[
+$$
 N-\beta_{m-1}
 <
 N-\beta_{m-2}
 <\cdots<
 N-\beta_0.
-\]
+$$
 
 ### Corollary 4.4 — Ramification at infinity
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_{\infty}(V)
 =
 mN-\sum_i\beta_i-\binom m2.
 }
-\]
+$$
 
 #### Proof
 
-Sum the infinity vanishing sequence and subtract \(\binom m2\). ∎
+Sum the infinity vanishing sequence and subtract $\binom m2$. ∎
 
 ## 4.4 Exact projective conservation
 
@@ -1066,37 +1066,37 @@ Sum the infinity vanishing sequence and subtract \(\binom m2\). ∎
 
 Let
 
-\[
+$$
 V\subseteq\mathbb Q[q]_{\le N}
-\]
+$$
 
-have dimension \(m\). Then
+have dimension $m$. Then
 
-\[
+$$
 \boxed{
 \sum_{p\in\mathbb P^1(\overline{\mathbb Q})}
 \operatorname{Ram}_p(V)
 =
 m(N-m+1).
 }
-\]
+$$
 
 #### Proof
 
-By Theorem 4.1, the ramification weight at every finite point equals the zero multiplicity of \(W_V\) there. Therefore
+By Theorem 4.1, the ramification weight at every finite point equals the zero multiplicity of $W_V$ there. Therefore
 
-\[
+$$
 \sum_{p\in\mathbb A^1(\overline{\mathbb Q})}
 \operatorname{Ram}_p(V)
 =
 \deg W_V
 =
 \sum_i\beta_i-\binom m2.
-\]
+$$
 
 Add the infinity contribution from Corollary 4.4:
 
-\[
+$$
 \begin{aligned}
 \sum_{p\in\mathbb P^1}
 \operatorname{Ram}_p(V)
@@ -1109,7 +1109,7 @@ mN-m(m-1)\\
 &=
 m(N-m+1).
 \end{aligned}
-\]
+$$
 
 ∎
 
@@ -1117,22 +1117,22 @@ m(N-m+1).
 
 The right side is
 
-\[
+$$
 \boxed{
 m(N-m+1)=\dim\operatorname{Gr}(m,N+1).}
-\]
+$$
 
-Thus the total ramification of an \(m\)-plane in a polynomial window equals the dimension of its ambient Grassmannian.
+Thus the total ramification of an $m$-plane in a polynomial window equals the dimension of its ambient Grassmannian.
 
 This is not an analogy. It is the exact Wronskian conservation law behind the Schubert geometry developed later in the chapter.
 
 ## 4.5 Exact affine conservation
 
-Remove the endpoint contributions at \(0\) and \(\infty\).
+Remove the endpoint contributions at $0$ and $\infty$.
 
 ### Project Theorem 4.7 — Nonzero affine ramification budget
 
-\[
+$$
 \boxed{
 \sum_{p\in\overline{\mathbb Q}^{\times}}
 \operatorname{Ram}_p(V)
@@ -1141,30 +1141,30 @@ Remove the endpoint contributions at \(0\) and \(\infty\).
 =
 \sum_i(\beta_i-\alpha_i).
 }
-\]
+$$
 
 Consequently,
 
-\[
+$$
 \boxed{
 \sum_{p\in\overline{\mathbb Q}^{\times}}
 \operatorname{Ram}_p(V)
 \le
 m(N-m+1).
 }
-\]
+$$
 
 #### Proof
 
-The sum over nonzero finite points is the degree of \(W_V\) minus its zero order at \(q=0\). By Corollary 4.3 this is
+The sum over nonzero finite points is the degree of $W_V$ minus its zero order at $q=0$. By Corollary 4.3 this is
 
-\[
+$$
 \left(\sum_i\beta_i-\binom m2\right)
 -
 \left(\sum_i\alpha_i-\binom m2\right)
 =
 \sum_i(\beta_i-\alpha_i).
-\]
+$$
 
 The universal bound follows from Corollary 1.4. ∎
 
@@ -1174,63 +1174,63 @@ The universal bound follows from Corollary 1.4. ∎
 
 Assume now that
 
-\[
+$$
 V\subseteq\mathbb Q[q,q^{-1}]
-\]
+$$
 
-is defined over \(\mathbb Q\). Let \(\zeta_d\) be one primitive \(d\)-th root.
+is defined over $\mathbb Q$. Let $\zeta_d$ be one primitive $d$-th root.
 
 ### Definition 5.1 — Cyclotomic ramification weight
 
 Define
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)
 =
 \operatorname{Ram}_{\zeta_d}(V).
 }
-\]
+$$
 
-Because \(V\) is rational, this number is independent of the chosen primitive \(d\)-th root.
+Because $V$ is rational, this number is independent of the chosen primitive $d$-th root.
 
-Indeed, Galois conjugation sends the local jet matrix at \(\zeta_d\) to the corresponding matrix at every conjugate primitive root and preserves all ranks and vanishing orders.
+Indeed, Galois conjugation sends the local jet matrix at $\zeta_d$ to the corresponding matrix at every conjugate primitive root and preserves all ranks and vanishing orders.
 
 ## 5.1 Wronskian valuation identity
 
 ### Project Theorem 5.2 — Cyclotomic Wronskian valuation
 
-For every \(d\ge1\),
+For every $d\ge1$,
 
-\[
+$$
 \boxed{
  v_{\Phi_d}(W_V)
 =
 \operatorname{Ram}_d(V).
 }
-\]
+$$
 
 The same identity holds for the Euler Wronskian.
 
 #### Proof
 
-At one primitive \(d\)-th root \(\zeta_d\), Theorem 4.1 gives
+At one primitive $d$-th root $\zeta_d$, Theorem 4.1 gives
 
-\[
+$$
 \operatorname{ord}_{q=\zeta_d}W_V
 =
 \operatorname{Ram}_d(V).
-\]
+$$
 
-Since \(W_V\) has rational coefficients up to a nonzero rational scalar, every Galois-conjugate primitive root has the same multiplicity. Therefore the exponent of the minimal polynomial \(\Phi_d\) in \(W_V\) is exactly this common multiplicity.
+Since $W_V$ has rational coefficients up to a nonzero rational scalar, every Galois-conjugate primitive root has the same multiplicity. Therefore the exponent of the minimal polynomial $\Phi_d$ in $W_V$ is exactly this common multiplicity.
 
 The Euler Wronskian differs by the monomial
 
-\[
+$$
 q^{\binom m2},
-\]
+$$
 
-which is coprime to every \(\Phi_d\). ∎
+which is coprime to every $\Phi_d$. ∎
 
 ## 5.2 Main budget theorem
 
@@ -1238,21 +1238,21 @@ which is coprime to every \(\Phi_d\). ∎
 
 Let
 
-\[
+$$
 V\subseteq\mathcal A_{L,N}
-\]
+$$
 
-be an \(m\)-dimensional rational Laurent-polynomial space. Let
+be an $m$-dimensional rational Laurent-polynomial space. Let
 
-\[
+$$
 \alpha_0<\cdots<\alpha_{m-1},
 \qquad
 \beta_0<\cdots<\beta_{m-1}
-\]
+$$
 
-be the lower and upper exponent sequences after shifting the window to \([0,N]\). Then
+be the lower and upper exponent sequences after shifting the window to $[0,N]$. Then
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)\operatorname{Ram}_d(V)
@@ -1261,34 +1261,34 @@ be the lower and upper exponent sequences after shifting the window to \([0,N]\)
 \le
 m(N-m+1).
 }
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)v_{\Phi_d}(W_V)
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 #### Proof
 
 By Theorem 5.2,
 
-\[
+$$
 \operatorname{Ram}_d(V)=v_{\Phi_d}(W_V).
-\]
+$$
 
-Apply the rank-one Global Cyclotomic Contact Budget from Part VIII to the nonzero Laurent polynomial \(W_V\):
+Apply the rank-one Global Cyclotomic Contact Budget from Part VIII to the nonzero Laurent polynomial $W_V$:
 
-\[
+$$
 \sum_d\varphi(d)v_{\Phi_d}(W_V)
 \le
 \operatorname{span}(W_V).
-\]
+$$
 
 The exact span formula is Corollary 4.3, and the universal Grassmannian bound is Corollary 1.4. ∎
 
@@ -1296,18 +1296,18 @@ The exact span formula is Corollary 4.3, and the universal Grassmannian bound is
 
 Let
 
-\[
+$$
 \mathcal R_{\mathrm{nc}}(V)
 =
 \sum_{
 \substack{p\in\overline{\mathbb Q}^{\times}\\
 p\text{ not a root of unity}}}
 \operatorname{Ram}_p(V).
-\]
+$$
 
 ### Project Theorem 5.4 — Exact cyclotomic/noncyclotomic decomposition
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)\operatorname{Ram}_d(V)
@@ -1316,11 +1316,11 @@ p\text{ not a root of unity}}}
 =
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)\operatorname{Ram}_d(V)
 =
@@ -1328,50 +1328,50 @@ Equivalently,
 -
 \mathcal R_{\mathrm{nc}}(V).
 }
-\]
+$$
 
 #### Proof
 
-The nonzero affine points split disjointly into roots of unity and non-roots of unity. At order \(d\), there are \(\varphi(d)\) primitive roots, each with ramification weight \(\operatorname{Ram}_d(V)\). Apply Theorem 4.7. ∎
+The nonzero affine points split disjointly into roots of unity and non-roots of unity. At order $d$, there are $\varphi(d)$ primitive roots, each with ramification weight $\operatorname{Ram}_d(V)$. Apply Theorem 4.7. ∎
 
 ### Corollary 5.5 — Affine cyclotomic saturation
 
 Equality
 
-\[
+$$
 \sum_d\varphi(d)\operatorname{Ram}_d(V)
 =
 \operatorname{span}(W_V)
-\]
+$$
 
 holds if and only if every nonzero zero of the Wronskian is a root of unity.
 
 Equivalently, up to a nonzero scalar and a Laurent monomial,
 
-\[
+$$
 \boxed{
 W_V(q)
 =
 q^A\prod_{d\in S}\Phi_d(q)^{r_d}
 }
-\]
+$$
 
-for a finite set \(S\).
+for a finite set $S$.
 
 ### Corollary 5.6 — Full Grassmannian saturation
 
 Equality
 
-\[
+$$
 \sum_d\varphi(d)\operatorname{Ram}_d(V)
 =
 m(N-m+1)
-\]
+$$
 
 holds if and only if:
 
-1. \(V\) is unramified at \(0\);
-2. \(V\) is unramified at \(\infty\);
+1. $V$ is unramified at $0$;
+2. $V$ is unramified at $\infty$;
 3. every finite ramification point is a root of unity.
 
 #### Proof
@@ -1382,9 +1382,9 @@ Use Theorem 4.5 and the nonnegativity of every omitted ramification weight. ∎
 
 ### Corollary 5.7 — Single-context bound
 
-For every \(d\),
+For every $d$,
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)
 \le
@@ -1392,47 +1392,47 @@ For every \(d\),
 \frac{\operatorname{span}(W_V)}{\varphi(d)}
 \right\rfloor.
 }
-\]
+$$
 
 In particular, if
 
-\[
+$$
 \varphi(d)>\operatorname{span}(W_V),
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{V\text{ is unramified at every primitive }d\text{-th root}.}
-\]
+$$
 
 ### Corollary 5.8 — Number of exceptional cyclotomic contexts
 
-The number of orders \(d\) for which
+The number of orders $d$ for which
 
-\[
+$$
 \operatorname{Ram}_d(V)>0
-\]
+$$
 
 is at most
 
-\[
+$$
 \operatorname{span}(W_V).
-\]
+$$
 
 More strongly,
 
-\[
+$$
 \boxed{
 \sum_d\operatorname{Ram}_d(V)
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 #### Proof
 
-Use \(\varphi(d)\ge1\) in Theorem 5.3. ∎
+Use $\varphi(d)\ge1$ in Theorem 5.3. ∎
 
 ---
 
@@ -1444,101 +1444,101 @@ A polynomial space may ramify because every member contains a common factor. Thi
 
 ### Definition 6.1 — Common cyclotomic depth
 
-For every \(d\ge1\), define
+For every $d\ge1$, define
 
-\[
+$$
 \boxed{
  c_d(V)
 =
 \min_{0\ne f\in V}v_{\Phi_d}(f).
 }
-\]
+$$
 
 Equivalently, if
 
-\[
+$$
 a_0(d)<a_1(d)<\cdots<a_{m-1}(d)
-\]
+$$
 
-is the vanishing sequence at a primitive \(d\)-th root, then
+is the vanishing sequence at a primitive $d$-th root, then
 
-\[
+$$
 \boxed{c_d(V)=a_0(d).}
-\]
+$$
 
 The cyclotomic common-content polynomial is
 
-\[
+$$
 \boxed{
 C_V^{\mathrm{cyc}}(q)
 =
 \prod_{d\ge1}\Phi_d(q)^{c_d(V)}.
 }
-\]
+$$
 
 Only finitely many factors occur because any basis member has finite degree.
 
-Every element of \(V\) is divisible by \(C_V^{\mathrm{cyc}}\). Define the residual space
+Every element of $V$ is divisible by $C_V^{\mathrm{cyc}}$. Define the residual space
 
-\[
+$$
 \boxed{
 U
 =
 \bigl(C_V^{\mathrm{cyc}}\bigr)^{-1}V.
 }
-\]
+$$
 
 ## 6.2 Residual vanishing sequence
 
-At context \(d\), multiplication by \(\Phi_d^{c_d}\) shifts every vanishing order upward by \(c_d\). Thus the residual sequence is
+At context $d$, multiplication by $\Phi_d^{c_d}$ shifts every vanishing order upward by $c_d$. Thus the residual sequence is
 
-\[
+$$
 \boxed{
  b_i(d)=a_i(d)-c_d(V).
 }
-\]
+$$
 
 It satisfies
 
-\[
+$$
 0=b_0(d)<b_1(d)<\cdots<b_{m-1}(d).
-\]
+$$
 
 ### Definition 6.2 — Residual ramification
 
 Define
 
-\[
+$$
 \boxed{
 \rho_d(V)
 =
 \sum_{i=0}^{m-1}\bigl(b_i(d)-i\bigr).
 }
-\]
+$$
 
-Then \(\rho_d(V)\ge0\).
+Then $\rho_d(V)\ge0$.
 
 ### Project Theorem 6.3 — Content–ramification decomposition
 
-For every \(d\),
+For every $d$,
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)
 =
 m c_d(V)+\rho_d(V).
 }
-\]
+$$
 
 Moreover,
 
-\[
+$$
 \boxed{
 W_V
 =
 \bigl(C_V^{\mathrm{cyc}}\bigr)^mW_U
 }
-\]
+$$
 
 up to a nonzero scalar.
 
@@ -1546,13 +1546,13 @@ up to a nonzero scalar.
 
 Since
 
-\[
+$$
 a_i(d)=c_d+b_i(d),
-\]
+$$
 
 we have
 
-\[
+$$
 \begin{aligned}
 \operatorname{Ram}_d(V)
 &=
@@ -1562,13 +1562,13 @@ we have
 &=
 m c_d+\rho_d(V).
 \end{aligned}
-\]
+$$
 
 The Wronskian factorization follows from the common-factor law, Lemma 3.3. ∎
 
 ### Project Theorem 6.4 — Global content–residual budget
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)
@@ -1576,11 +1576,11 @@ The Wronskian factorization follows from the common-factor law, Lemma 3.3. ∎
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{
  m\deg C_V^{\mathrm{cyc}}
 +
@@ -1588,23 +1588,23 @@ Equivalently,
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 After removing the common cyclotomic content,
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)\rho_d(V)
 \le
 \operatorname{span}(W_U).
 }
-\]
+$$
 
 #### Proof
 
 Insert Theorem 6.3 into Theorem 5.3. Since every cyclotomic polynomial has nonzero constant term,
 
-\[
+$$
 \operatorname{span}
 \left(
 (C_V^{\mathrm{cyc}})^mW_U
@@ -1613,7 +1613,7 @@ Insert Theorem 6.3 into Theorem 5.3. Since every cyclotomic polynomial has nonze
 m\deg C_V^{\mathrm{cyc}}
 +
 \operatorname{span}(W_U).
-\]
+$$
 
 This gives the residual form. ∎
 
@@ -1621,17 +1621,17 @@ This gives the residual form. ∎
 
 The quantity
 
-\[
+$$
 m c_d(V)
-\]
+$$
 
-is unavoidable. It is the Wronskian cost of forcing all \(m\) basis directions through the common factor \(\Phi_d^{c_d}\).
+is unavoidable. It is the Wronskian cost of forcing all $m$ basis directions through the common factor $\Phi_d^{c_d}$.
 
 The quantity
 
-\[
+$$
 \rho_d(V)
-\]
+$$
 
 measures the excess beyond this mandatory content. It records genuine higher-order dependence among the residual local germs.
 
@@ -1643,9 +1643,9 @@ Combine the cumulative rank-defect formula from Theorem 2.5 with the global cycl
 
 ### Project Theorem 7.1 — Global cyclotomic jet-rank budget
 
-For every rational \(m\)-dimensional Laurent-polynomial space \(V\),
+For every rational $m$-dimensional Laurent-polynomial space $V$,
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}\varphi(d)
 \sum_{r\ge1}
@@ -1655,13 +1655,13 @@ For every rational \(m\)-dimensional Laurent-polynomial space \(V\),
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
-Here \(J_{d,r}\) is the order-\(r\) Euler-jet map at one primitive \(d\)-th root.
+Here $J_{d,r}$ is the order-$r$ Euler-jet map at one primitive $d$-th root.
 
-If \(V\subseteq\mathcal A_{L,N}\), then
+If $V\subseteq\mathcal A_{L,N}$, then
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}\varphi(d)
 \sum_{r\ge1}
@@ -1671,11 +1671,11 @@ If \(V\subseteq\mathcal A_{L,N}\), then
 \le
 m(N-m+1).
 }
-\]
+$$
 
 #### Proof
 
-For each \(d\), Theorem 2.5 identifies the inner sum with \(\operatorname{Ram}_d(V)\). Apply Theorem 5.3. ∎
+For each $d$, Theorem 2.5 identifies the inner sum with $\operatorname{Ram}_d(V)$. Apply Theorem 5.3. ∎
 
 ## 7.1 Truncated lower bounds
 
@@ -1683,9 +1683,9 @@ Exact ramification requires all ranks until the jet map becomes injective. Any f
 
 ### Corollary 7.2 — Finite rank-defect lower bound
 
-For arbitrary depths \(R_d\ge1\),
+For arbitrary depths $R_d\ge1$,
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)
 \sum_{r=1}^{R_d}
@@ -1695,32 +1695,32 @@ For arbitrary depths \(R_d\ge1\),
 \le
 \operatorname{span}(W_V).
 }
-\]
+$$
 
 ## 7.2 Dependence from excessive local degeneracy
 
 Let
 
-\[
+$$
 F_1,\ldots,F_m\in\mathcal A_{L,N}
-\]
+$$
 
 be compressed or explicit Laurent polynomials. They are not assumed independent.
 
 For each context and depth, form the jet matrix
 
-\[
+$$
 \mathcal J_{d,r}
 =
 \left(D^jF_i(\zeta_d)\right)_{
 \substack{0\le j<r\\1\le i\le m}}.
-\]
+$$
 
 ### Algorithmic Theorem 7.3 — Global rank-obstruction certificate
 
 If a finite set of exact jet-rank calculations satisfies
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)
 \sum_{r=1}^{R_d}
@@ -1730,17 +1730,17 @@ If a finite set of exact jet-rank calculations satisfies
 >
 m(N-m+1),
 }
-\]
+$$
 
 then
 
-\[
+$$
 \boxed{F_1,\ldots,F_m\text{ are linearly dependent}.}
-\]
+$$
 
 #### Proof
 
-Assume the \(F_i\) were independent. Their span would be an \(m\)-dimensional subspace of \(\mathcal A_{L,N}\), and the matrix ranks would equal the ranks of its jet maps. Corollary 7.2 would bound the displayed sum by \(m(N-m+1)\), contradicting the strict inequality. ∎
+Assume the $F_i$ were independent. Their span would be an $m$-dimensional subspace of $\mathcal A_{L,N}$, and the matrix ranks would equal the ranks of its jet maps. Corollary 7.2 would bound the displayed sum by $m(N-m+1)$, contradicting the strict inequality. ∎
 
 ### Caution 7.4 — Nature of the certificate
 
@@ -1761,37 +1761,37 @@ Its value is greatest when:
 
 Let
 
-\[
+$$
 V=\operatorname{span}\{P\}.
-\]
+$$
 
 Then
 
-\[
+$$
 a_0(d)=v_{\Phi_d}(P),
-\]
+$$
 
 so
 
-\[
+$$
 \operatorname{Ram}_d(V)=v_{\Phi_d}(P).
-\]
+$$
 
 The Wronskian is
 
-\[
+$$
 W_V=P.
-\]
+$$
 
 Therefore Theorem 5.3 becomes exactly
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)v_{\Phi_d}(P)
 \le
 \operatorname{span}(P),
 }
-\]
+$$
 
 which is the Global Cyclotomic Contact Budget of Part VIII.
 
@@ -1801,55 +1801,55 @@ Thus Part VIII is precisely the rank-one case of the present theorem.
 
 Let
 
-\[
+$$
 V=\operatorname{span}\{F,G\}
-\]
+$$
 
-with \(F,G\) linearly independent. At a primitive \(d\)-th root, write the vanishing sequence as
+with $F,G$ linearly independent. At a primitive $d$-th root, write the vanishing sequence as
 
-\[
+$$
 a_0<a_1.
-\]
+$$
 
 Then
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)=a_0+a_1-1.
 }
-\]
+$$
 
 The common depth is
 
-\[
+$$
 c_d=a_0,
-\]
+$$
 
 and the residual sequence is
 
-\[
+$$
 0,\ell,
 \qquad
 \ell=a_1-a_0\ge1.
-\]
+$$
 
 Hence
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)
 =
 2c_d+(\ell-1),
 }
-\]
+$$
 
 and
 
-\[
+$$
 \boxed{
 \rho_d(V)=\ell-1.
 }
-\]
+$$
 
 ### Interpretation 8.1
 
@@ -1857,45 +1857,45 @@ The first residual cancellation is forced by dimension: among two residual germs
 
 Ramification measures only the excess beyond this dimension-forced cancellation. Therefore:
 
-- residual order \(\ell=1\) contributes no residual ramification;
-- residual order \(\ell=2\) costs one unit;
-- residual order \(\ell=r\) costs \(r-1\) units.
+- residual order $\ell=1$ contributes no residual ramification;
+- residual order $\ell=2$ costs one unit;
+- residual order $\ell=r$ costs $r-1$ units.
 
 ## 8.3 Simple collisions are unramified
 
 Suppose
 
-\[
+$$
 F(\zeta_d)=G(\zeta_d)\ne0
-\]
+$$
 
 and
 
-\[
+$$
  v_{\Phi_d}(F-G)=1.
-\]
+$$
 
-Then \(F\) has order zero and \(F-G\) has order one. Hence the vanishing sequence is
+Then $F$ has order zero and $F-G$ has order one. Hence the vanishing sequence is
 
-\[
+$$
 0,1,
-\]
+$$
 
 so
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(\operatorname{span}\{F,G\})=0.
 }
-\]
+$$
 
 This gives a geometric reinterpretation of the Simple-Collision Theorem from Part II:
 
-\[
+$$
 \boxed{
 \text{a simple pairwise collision is not exceptional ramification;}
 }
-\]
+$$
 
 it is exactly the generic order-one cancellation forced inside a two-dimensional local space.
 
@@ -1905,7 +1905,7 @@ Higher pairwise collision order is the first genuinely ramified event.
 
 For any independent pair,
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)
 \left(
@@ -1914,7 +1914,7 @@ For any independent pair,
 \le
 \operatorname{span}(W(F,G)).
 }
-\]
+$$
 
 Thus deep pairwise collisions at many contexts cannot occur independently. Their excess orders share one global Wronskian budget.
 
@@ -1924,97 +1924,97 @@ Thus deep pairwise collisions at many contexts cannot occur independently. Their
 
 Fix
 
-\[
+$$
 n\ge0
-\]
+$$
 
 and distinct lower-half positions
 
-\[
+$$
 0\le k_1<\cdots<k_m
 \le
 \left\lfloor\frac n2\right\rfloor.
-\]
+$$
 
 Set
 
-\[
+$$
 G_i(q)={n\brack k_i}_q,
 \qquad
 E_i=k_i(n-k_i).
-\]
+$$
 
-Part XIV proved that these polynomials are linearly independent and that their first \(m\) Euler jets at \(q=1\) have a nonzero exact Vandermonde determinant.
+Part XIV proved that these polynomials are linearly independent and that their first $m$ Euler jets at $q=1$ have a nonzero exact Vandermonde determinant.
 
 Let
 
-\[
+$$
 V_{n,\mathbf k}
 =
 \operatorname{span}_{\mathbb Q}\{G_1,\ldots,G_m\}.
-\]
+$$
 
 ## 9.1 The positive endpoint is unramified
 
-### Project Corollary 9.1 — Gaussian unramifiedness at \(q=1\)
+### Project Corollary 9.1 — Gaussian unramifiedness at $q=1$
 
-The vanishing sequence of \(V_{n,\mathbf k}\) at \(q=1\) is
+The vanishing sequence of $V_{n,\mathbf k}$ at $q=1$ is
 
-\[
+$$
 \boxed{0,1,\ldots,m-1.}
-\]
+$$
 
 Therefore
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_1(V_{n,\mathbf k})=0.
 }
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 \boxed{W_{V_{n,\mathbf k}}(1)\ne0.}
-\]
+$$
 
 #### Proof
 
-Part XIV proved that the first \(m\) Euler jets form an invertible matrix. By Corollary 4.2, this is equivalent to unramifiedness. ∎
+Part XIV proved that the first $m$ Euler jets form an invertible matrix. By Corollary 4.2, this is equivalent to unramifiedness. ∎
 
 ### Interpretation 9.2
 
 Part XIV is the statement that the Gaussian row occupies the open osculating Schubert cell at the positive endpoint.
 
-The present theorem shows what that local rigidity means globally: the context \(d=1\) consumes none of the Gaussian space's ramification budget, leaving every unit of the budget to other roots and to the endpoints \(0\) and \(\infty\).
+The present theorem shows what that local rigidity means globally: the context $d=1$ consumes none of the Gaussian space's ramification budget, leaving every unit of the budget to other roots and to the endpoints $0$ and $\infty$.
 
 ## 9.2 Exact Gaussian Wronskian degree
 
 The degrees
 
-\[
+$$
 E_1<\cdots<E_m
-\]
+$$
 
 are distinct. Therefore they are the upper exponent sequence:
 
-\[
+$$
 \beta_i=E_{i+1}
-\]
+$$
 
-if indices are shifted to \(0\le i<m\).
+if indices are shifted to $0\le i<m$.
 
 Let
 
-\[
+$$
 0\le\alpha_0<\cdots<\alpha_{m-1}
-\]
+$$
 
-be the lower exponent sequence at \(q=0\).
+be the lower exponent sequence at $q=0$.
 
 ### Project Theorem 9.3 — Global Gaussian-row ramification budget
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)\operatorname{Ram}_d(V_{n,\mathbf k})
@@ -2023,68 +2023,68 @@ be the lower exponent sequence at \(q=0\).
 -
 \sum_{j=0}^{m-1}\alpha_j.
 }
-\]
+$$
 
 In particular,
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}
 \varphi(d)\operatorname{Ram}_d(V_{n,\mathbf k})
 \le
 \sum_{i=1}^{m}E_i-\binom m2.
 }
-\]
+$$
 
 Moreover,
 
-\[
+$$
 \boxed{
 \deg W_{V_{n,\mathbf k}}
 =
 \sum_{i=1}^{m}E_i-\binom m2.
 }
-\]
+$$
 
 #### Proof
 
-Apply Theorem 5.3 and Corollary 4.3. Since the \(\alpha_j\) are distinct nonnegative integers,
+Apply Theorem 5.3 and Corollary 4.3. Since the $\alpha_j$ are distinct nonnegative integers,
 
-\[
+$$
 \sum_j\alpha_j\ge\binom m2.
-\]
+$$
 
 The degree formula follows from the upper exponent sequence. ∎
 
-This theorem is global and all-context. It does not require the one-parameter Gaussian cumulant collapse to persist away from \(q=1\).
+This theorem is global and all-context. It does not require the one-parameter Gaussian cumulant collapse to persist away from $q=1$.
 
 ## 9.3 Stable central blocks
 
 Assume the stable range
 
-\[
+$$
 t\ge5,
 \qquad
 n\ge3t-2.
-\]
+$$
 
 Let
 
-\[
+$$
 K_{n,t}
 =
 \left\{t,t+1,\ldots,\left\lfloor\frac n2\right\rfloor\right\},
-\]
+$$
 
 and let
 
-\[
+$$
 m=|K_{n,t}|.
-\]
+$$
 
 Define the full distinct central-block space
 
-\[
+$$
 \boxed{
 V_{n,t}
 =
@@ -2093,21 +2093,21 @@ V_{n,t}
 {n\brack k}_q:k\in K_{n,t}
 \right\}.
 }
-\]
+$$
 
 Part II proved that its common polynomial content is
 
-\[
+$$
 \boxed{
 C_{n,t}(q)
 =
 \prod_{d=n-t+1}^{n}\Phi_d(q).
 }
-\]
+$$
 
 Set
 
-\[
+$$
 \boxed{
 L_{n,t}
 =
@@ -2115,37 +2115,37 @@ L_{n,t}
 =
 \sum_{d=n-t+1}^{n}\varphi(d).
 }
-\]
+$$
 
 For every terminal context
 
-\[
+$$
 n-t+1\le d\le n,
-\]
+$$
 
 one has
 
-\[
+$$
 c_d(V_{n,t})=1.
-\]
+$$
 
-For every other \(d\),
+For every other $d$,
 
-\[
+$$
 c_d(V_{n,t})=0.
-\]
+$$
 
 ### Project Theorem 9.4 — Stable content–ramification decomposition
 
 Let
 
-\[
+$$
 E_k=k(n-k).
-\]
+$$
 
 Then
 
-\[
+$$
 \boxed{
  mL_{n,t}
 +
@@ -2153,19 +2153,19 @@ Then
 \le
 \operatorname{span}(W_{V_{n,t}}).
 }
-\]
+$$
 
-After dividing the entire space by \(C_{n,t}\),
+After dividing the entire space by $C_{n,t}$,
 
-\[
+$$
 R_{n,t,k}(q)
 =
 \frac{{n\brack k}_q}{C_{n,t}(q)},
-\]
+$$
 
 one obtains
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}\varphi(d)\rho_d(V_{n,t})
 \le
@@ -2173,11 +2173,11 @@ one obtains
 -
 \sum_{j=0}^{m-1}\alpha_j,
 }
-\]
+$$
 
-where \(\alpha_j\) is the lower exponent sequence of the residual space. In particular,
+where $\alpha_j$ is the lower exponent sequence of the residual space. In particular,
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}\varphi(d)\rho_d(V_{n,t})
 \le
@@ -2185,27 +2185,27 @@ where \(\alpha_j\) is the lower exponent sequence of the residual space. In part
 -
 \binom m2.
 }
-\]
+$$
 
 #### Proof
 
 The common-depth statement is exactly the Stable Content Theorem of Part II. Apply Theorem 6.4.
 
-The factor \(C_{n,t}\) has constant term one and degree \(L_{n,t}\). Dividing by it lowers every upper degree by \(L_{n,t}\) and preserves local orders at \(q=0\), because it is a unit there. Therefore the residual upper degrees are
+The factor $C_{n,t}$ has constant term one and degree $L_{n,t}$. Dividing by it lowers every upper degree by $L_{n,t}$ and preserves local orders at $q=0$, because it is a unit there. Therefore the residual upper degrees are
 
-\[
+$$
 E_k-L_{n,t},
-\]
+$$
 
-and the residual lower sequence is \((\alpha_j)\). Apply Theorem 5.3 to the residual space. ∎
+and the residual lower sequence is $(\alpha_j)$. Apply Theorem 5.3 to the residual space. ∎
 
 ### Interpretation 9.5
 
 Part II gives the exact mandatory contribution
 
-\[
+$$
 \boxed{mL_{n,t}.}
-\]
+$$
 
 Part XV shows that every additional higher-order dependency among the primitive residual germs must fit inside the remaining Wronskian span.
 
@@ -2215,29 +2215,29 @@ Thus stable content and higher collision geometry are no longer separate stateme
 
 Let
 
-\[
+$$
 n=Md-1,
 \qquad
 M\ge2,
-\]
+$$
 
 and choose
 
-\[
+$$
 0\le i<j\le d-1.
-\]
+$$
 
 When the Part II collision congruence
 
-\[
+$$
 2d\mid(i-j)(d-i-j-1)
-\]
+$$
 
-holds, the two Gaussian values agree at a primitive \(d\)-th root and their difference has exact \(\Phi_d\)-valuation one.
+holds, the two Gaussian values agree at a primitive $d$-th root and their difference has exact $\Phi_d$-valuation one.
 
 Therefore
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d
 \left(
@@ -2248,11 +2248,11 @@ Therefore
 \right)
 =0.
 }
-\]
+$$
 
 This places the Simple-Collision Theorem at the bottom of the global hierarchy:
 
-\[
+$$
 \boxed{
 \text{simple collision}
 =
@@ -2260,7 +2260,7 @@ This places the Simple-Collision Theorem at the bottom of the global hierarchy:
 =
 \text{zero excess ramification}.
 }
-\]
+$$
 
 ---
 
@@ -2270,67 +2270,67 @@ The ramification weight has an intrinsic Grassmannian meaning.
 
 Let
 
-\[
+$$
 A_N=\mathbb Q[q]_{\le N}.
-\]
+$$
 
-At a point \(p\in\mathbb P^1\), define the osculating flag by vanishing order:
+At a point $p\in\mathbb P^1$, define the osculating flag by vanishing order:
 
-\[
+$$
 \mathcal F_p^{r}
 =
 \{f\in A_N:\operatorname{ord}_p(f)\ge r\}.
-\]
+$$
 
-For finite \(p\), this flag has codimension \(r\) for \(0\le r\le N+1\). At infinity, use sections of \(\mathcal O(N)\).
+For finite $p$, this flag has codimension $r$ for $0\le r\le N+1$. At infinity, use sections of $\mathcal O(N)$.
 
-An \(m\)-plane \(V\) has vanishing sequence
+An $m$-plane $V$ has vanishing sequence
 
-\[
+$$
 a_0(p)<\cdots<a_{m-1}(p).
-\]
+$$
 
 ### Classical Theorem 10.1 — Schubert codimension of a vanishing sequence
 
-The locus of \(m\)-planes whose vanishing sequence at \(p\) is at least
+The locus of $m$-planes whose vanishing sequence at $p$ is at least
 
-\[
+$$
 a_0<\cdots<a_{m-1}
-\]
+$$
 
 has Schubert codimension
 
-\[
+$$
 \boxed{
 \sum_{i=0}^{m-1}(a_i-i).
 }
-\]
+$$
 
 Thus
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_p(V)
 =
 \text{osculating Schubert codimension of }V\text{ at }p.
 }
-\]
+$$
 
 #### Proof
 
 Choose coordinates adapted to the complete flag
 
-\[
+$$
 A_N=\mathcal F_p^0\supset\mathcal F_p^1\supset\cdots.
-\]
+$$
 
-A row-echelon matrix representing \(V\) has pivot positions \(a_0,\ldots,a_{m-1}\). Relative to the open cell with pivot positions \(0,1,\ldots,m-1\), shifting pivot \(i\) from \(i\) to \(a_i\) imposes \(a_i-i\) independent zero conditions. Summing gives the Schubert codimension. ∎
+A row-echelon matrix representing $V$ has pivot positions $a_0,\ldots,a_{m-1}$. Relative to the open cell with pivot positions $0,1,\ldots,m-1$, shifting pivot $i$ from $i$ to $a_i$ imposes $a_i-i$ independent zero conditions. Summing gives the Schubert codimension. ∎
 
 ### Project Corollary 10.2 — Cyclotomic Schubert budget
 
-For a rational \(m\)-plane in a width-\(N\) Laurent window,
+For a rational $m$-plane in a width-$N$ Laurent window,
 
-\[
+$$
 \boxed{
 \sum_{d\ge1}\varphi(d)
 \operatorname{codim}
@@ -2338,13 +2338,13 @@ For a rational \(m\)-plane in a width-\(N\) Laurent window,
 \le
 \dim\operatorname{Gr}(m,N+1).
 }
-\]
+$$
 
 The sharper affine bound replaces the Grassmannian dimension by
 
-\[
+$$
 \sum_i(\beta_i-\alpha_i).
-\]
+$$
 
 ### Interpretation 10.3
 
@@ -2352,9 +2352,9 @@ A rational polynomial space cannot satisfy independently prescribed exceptional 
 
 Each primitive order contributes its Schubert codimension at all Galois-conjugate roots, hence the factor
 
-\[
+$$
 \varphi(d).
-\]
+$$
 
 The total weighted codimension cannot exceed the dimension of the Grassmannian in which the space moves.
 
@@ -2366,19 +2366,19 @@ Part IX proved that a cyclotomic jet schedule of total weight at least the ambie
 
 ## 11.1 Ambient jet map
 
-Choose a finite set \(\mathcal D\) and depths \(r_d\ge1\). Put
+Choose a finite set $\mathcal D$ and depths $r_d\ge1$. Put
 
-\[
+$$
 \boxed{
 B
 =
 \sum_{d\in\mathcal D}\varphi(d)r_d.
 }
-\]
+$$
 
 Define
 
-\[
+$$
 \boxed{
 \mathcal J:
 \mathcal A_{L,N}
@@ -2386,29 +2386,29 @@ Define
 \bigoplus_{d\in\mathcal D}
 \mathbb Q(\zeta_d)^{r_d}
 }
-\]
+$$
 
 by collecting the prescribed Euler jets.
 
 By cyclotomic Hermite interpolation, if
 
-\[
+$$
 B\ge N+1,
-\]
+$$
 
-then \(\mathcal J\) is injective.
+then $\mathcal J$ is injective.
 
 ### Project Theorem 11.1 — Grassmannian finite determination
 
 Assume
 
-\[
+$$
 B\ge N+1.
-\]
+$$
 
 Then the induced map
 
-\[
+$$
 \boxed{
 \operatorname{Gr}(m,\mathcal A_{L,N})
 \longrightarrow
@@ -2421,70 +2421,70 @@ Then the induced map
 \qquad
 V\longmapsto\mathcal J(V),
 }
-\]
+$$
 
 is injective.
 
-Thus an \(m\)-dimensional polynomial space is uniquely determined by the row space of any cyclotomic jet matrix whose ambient weighted budget is at least \(N+1\).
+Thus an $m$-dimensional polynomial space is uniquely determined by the row space of any cyclotomic jet matrix whose ambient weighted budget is at least $N+1$.
 
 #### Proof
 
-Let \(V_1,V_2\) satisfy
+Let $V_1,V_2$ satisfy
 
-\[
+$$
 \mathcal J(V_1)=\mathcal J(V_2).
-\]
+$$
 
-For \(f\in V_1\), the vector \(\mathcal J(f)\) lies in \(\mathcal J(V_2)\), so there exists \(g\in V_2\) with
+For $f\in V_1$, the vector $\mathcal J(f)$ lies in $\mathcal J(V_2)$, so there exists $g\in V_2$ with
 
-\[
+$$
 \mathcal J(f)=\mathcal J(g).
-\]
+$$
 
-Injectivity of \(\mathcal J\) gives \(f=g\), hence \(V_1\subseteq V_2\). By symmetry, \(V_2\subseteq V_1\). ∎
+Injectivity of $\mathcal J$ gives $f=g$, hence $V_1\subseteq V_2$. By symmetry, $V_2\subseteq V_1$. ∎
 
 ### Corollary 11.2 — Optimal exact reconstruction
 
 If
 
-\[
+$$
 B=N+1,
-\]
+$$
 
-then the ambient jet map is a vector-space isomorphism onto its target. Every \(m\)-plane in the polynomial window corresponds bijectively to an \(m\)-plane in the exact jet-coordinate space.
+then the ambient jet map is a vector-space isomorphism onto its target. Every $m$-plane in the polynomial window corresponds bijectively to an $m$-plane in the exact jet-coordinate space.
 
 ### Algorithmic Theorem 11.3 — Subspace reconstruction
 
 Given:
 
-1. a Laurent window \(\mathcal A_{L,N}\);
-2. a cyclotomic jet schedule with \(B\ge N+1\);
-3. an exact basis for the image subspace \(\mathcal J(V)\);
+1. a Laurent window $\mathcal A_{L,N}$;
+2. a cyclotomic jet schedule with $B\ge N+1$;
+3. an exact basis for the image subspace $\mathcal J(V)$;
 
-one reconstructs \(V\) by applying the Part IX inverse Hermite map to every image-basis vector and taking their span.
+one reconstructs $V$ by applying the Part IX inverse Hermite map to every image-basis vector and taking their span.
 
 #### Proof
 
-The inverse exists on the image because \(\mathcal J\) is injective. Exact local-to-residue conversion and Chinese-remainder reconstruction recover each polynomial basis vector. The resulting span maps back to the supplied image subspace and is unique by Theorem 11.1. ∎
+The inverse exists on the image because $\mathcal J$ is injective. Exact local-to-residue conversion and Chinese-remainder reconstruction recover each polynomial basis vector. The resulting span maps back to the supplied image subspace and is unique by Theorem 11.1. ∎
 
 ### Caution 11.4 — Reconstruction versus ramification
 
 The ambient reconstruction budget
 
-\[
+$$
 N+1
-\]
+$$
 
 and the Wronskian ramification budget
 
-\[
+$$
 m(N-m+1)
-\]
+$$
 
 serve different purposes.
 
-- \(N+1\) is the number of scalar coordinates required to reconstruct one polynomial and therefore the ambient space.
-- \(m(N-m+1)\) is the dimension of the Grassmannian and the total amount of exceptional osculation available to an \(m\)-plane.
+- $N+1$ is the number of scalar coordinates required to reconstruct one polynomial and therefore the ambient space.
+- $m(N-m+1)$ is the dimension of the Grassmannian and the total amount of exceptional osculation available to an $m$-plane.
 
 They coincide only in special ranks.
 
@@ -2496,23 +2496,23 @@ The universal cyclotomic budget is exact.
 
 Let
 
-\[
+$$
 M(q)
 =
 \prod_{d\in\mathcal D}\Phi_d(q)^{r_d}
-\]
+$$
 
 be any nonzero cyclotomic product, and put
 
-\[
+$$
 R=\deg M
 =
 \sum_{d\in\mathcal D}\varphi(d)r_d.
-\]
+$$
 
-Fix \(m\ge1\) and define
+Fix $m\ge1$ and define
 
-\[
+$$
 \boxed{
 V
 =
@@ -2521,98 +2521,98 @@ M(q)\mathbb Q[q]_{<m}
 \operatorname{span}
 \{M,qM,\ldots,q^{m-1}M\}.
 }
-\]
+$$
 
 This space lies in
 
-\[
+$$
 \mathbb Q[q]_{\le N},
 \qquad
 N=R+m-1.
-\]
+$$
 
 ### Sharpness Theorem 12.1 — Universal budget saturation
 
 For the space above:
 
-1. at every selected context \(d\),
-   \[
+1. at every selected context $d$,
+   $$
    a_i(d)=r_d+i;
-   \]
+   $$
 2. therefore
-   \[
+   $$
    \operatorname{Ram}_d(V)=mr_d;
-   \]
+   $$
 3. the Wronskian is
-   \[
+   $$
    \boxed{W_V(q)=c_mM(q)^m}
-   \]
-   for a nonzero rational constant \(c_m\);
+   $$
+   for a nonzero rational constant $c_m$;
 4. and
-   \[
+   $$
    \boxed{
    \sum_d\varphi(d)\operatorname{Ram}_d(V)
    =mR
    =m(N-m+1).
    }
-   \]
+   $$
 
 Thus the bound in Theorem 5.3 cannot be improved.
 
 #### Proof
 
-At a root of \(M\) of multiplicity \(r_d\), multiplication by \(M\) shifts the vanishing sequence of
+At a root of $M$ of multiplicity $r_d$, multiplication by $M$ shifts the vanishing sequence of
 
-\[
+$$
 \mathbb Q[q]_{<m}
-\]
+$$
 
 from
 
-\[
+$$
 0,1,\ldots,m-1
-\]
+$$
 
 to
 
-\[
+$$
 r_d,r_d+1,\ldots,r_d+m-1.
-\]
+$$
 
 Hence
 
-\[
+$$
 \operatorname{Ram}_d(V)
 =
 \sum_{i=0}^{m-1}r_d
 =mr_d.
-\]
+$$
 
 The Wronskian common-factor law gives
 
-\[
+$$
 W_V=M^mW(1,q,\ldots,q^{m-1}).
-\]
+$$
 
 The final Wronskian is the nonzero constant
 
-\[
+$$
 \prod_{j=0}^{m-1}j!.
-\]
+$$
 
 Finally,
 
-\[
+$$
 N-m+1=R,
-\]
+$$
 
 so
 
-\[
+$$
 \sum_d\varphi(d)mr_d
 =mR
 =m(N-m+1).
-\]
+$$
 
 ∎
 
@@ -2620,8 +2620,8 @@ so
 
 The extremizer spends the entire Grassmannian budget on mandatory cyclotomic content. It has:
 
-- no ramification at \(0\);
-- no ramification at \(\infty\);
+- no ramification at $0$;
+- no ramification at $\infty$;
 - no noncyclotomic ramification;
 - zero residual ramification after the common factor is removed.
 
@@ -2633,21 +2633,21 @@ Thus even the pure-content part of the theorem is already sharp in every rank.
 
 ## 13.1 Local ramification certificate
 
-A local ramification certificate at context \(d\) may consist of either:
+A local ramification certificate at context $d$ may consist of either:
 
 1. an adapted basis with certified vanishing orders
-   \[
+   $$
    a_0<\cdots<a_{m-1};
-   \]
+   $$
 2. the ranks
-   \[
+   $$
    \operatorname{rank}J_{d,r}
-   \]
-   through the first depth at which the rank reaches \(m\);
+   $$
+   through the first depth at which the rank reaches $m$;
 3. the exact valuation
-   \[
+   $$
    v_{\Phi_d}(W_V).
-   \]
+   $$
 
 The three forms are equivalent by Theorems 2.5 and 5.2.
 
@@ -2655,15 +2655,15 @@ The three forms are equivalent by Theorems 2.5 and 5.2.
 
 A global certificate records:
 
-- the ambient width \(N\);
-- the rank \(m\);
-- optionally the sharper endpoint sequences \(\alpha_i,\beta_i\);
+- the ambient width $N$;
+- the rank $m$;
+- optionally the sharper endpoint sequences $\alpha_i,\beta_i$;
 - selected contexts and exact jet ranks;
 - the accumulated weighted defect.
 
 A verifier checks
 
-\[
+$$
 \sum_d\varphi(d)
 \sum_r
 \left(
@@ -2671,7 +2671,7 @@ A verifier checks
 \right)
 \le
 \sum_i(\beta_i-\alpha_i).
-\]
+$$
 
 Violation certifies linear dependence or an incorrect claimed jet packet.
 
@@ -2679,16 +2679,16 @@ Violation certifies linear dependence or an incorrect claimed jet packet.
 
 For a structured space with known common cyclotomic content, a certificate records
 
-\[
+$$
 (d,c_d(V))
-\]
+$$
 
 for every nonzero common depth. The mandatory Wronskian contribution is
 
-\[
+$$
 \boxed{
 m\sum_d\varphi(d)c_d(V).}
-\]
+$$
 
 Residual jet ranks are then checked against the reduced budget.
 
@@ -2696,28 +2696,28 @@ Residual jet ranks are then checked against the reduced budget.
 
 For a selected Gaussian row, Part XIV supplies an immediate independence certificate:
 
-\[
+$$
 W_V(1)
 e0.
-\]
+$$
 
 Part XV supplements it with a global consistency certificate:
 
-\[
+$$
 \sum_d\varphi(d)\operatorname{Ram}_d(V)
 \le
 \sum_iE_i-\sum_j\alpha_j.
-\]
+$$
 
 In a stable central block, Part II supplies the exact common-content charge
 
-\[
+$$
 mL_{n,t}.
-\]
+$$
 
 The three chapters therefore produce a proof-carrying package:
 
-\[
+$$
 \boxed{
 \text{exact content}
 +
@@ -2725,7 +2725,7 @@ The three chapters therefore produce a proof-carrying package:
 +
 \text{all-context ramification budget}.
 }
-\]
+$$
 
 ## 13.5 Complexity boundary
 
@@ -2757,7 +2757,7 @@ The following ingredients are classical:
 The project contribution of this chapter is their exact integration with CCA:
 
 - grouping ramification by cyclotomic order;
-- the Galois weight \(\varphi(d)\);
+- the Galois weight $\varphi(d)$;
 - the common-content/residual decomposition;
 - the cumulative cyclotomic jet-rank budget;
 - the collision reinterpretation;
@@ -2780,11 +2780,11 @@ In positive characteristic, Wronskians may vanish for independent families, and 
 
 ## 14.3 Rationality
 
-For a space over \(\mathbb Q\), ramification at one primitive \(d\)-th root propagates with the same weight to every primitive conjugate. This is what produces the factor
+For a space over $\mathbb Q$, ramification at one primitive $d$-th root propagates with the same weight to every primitive conjugate. This is what produces the factor
 
-\[
+$$
 \varphi(d).
-\]
+$$
 
 For a space defined only over a larger field, the local Wronskian theorem remains true, but the Galois-weighted cyclotomic grouping must be modified according to the field of definition.
 
@@ -2792,17 +2792,17 @@ For a space defined only over a larger field, the local Wronskian theorem remain
 
 The universal quantity
 
-\[
+$$
 m(N-m+1)
-\]
+$$
 
 depends on the chosen minimal support window. Enlarging the window introduces artificial ramification capacity at infinity.
 
 For the sharpest statement, use the smallest Laurent interval containing the entire space, or use the exact endpoint-sequence bound
 
-\[
+$$
 \sum_i(\beta_i-\alpha_i).
-\]
+$$
 
 ## 14.5 Ramification does not identify the space
 
@@ -2812,7 +2812,7 @@ Subspace reconstruction in Section 11 uses the full ambient cyclotomic jet image
 
 ## 14.6 Pairwise versus arbitrary-rank data
 
-Pairwise collision depths do not determine the full ramification sequence when \(m\ge3\). Higher-rank jet minors contain genuinely new information.
+Pairwise collision depths do not determine the full ramification sequence when $m\ge3$. Higher-rank jet minors contain genuinely new information.
 
 The correct arbitrary-rank invariant is the complete vanishing sequence, equivalently the cumulative jet-rank defect.
 
@@ -2825,20 +2825,20 @@ The correct arbitrary-rank invariant is the complete vanishing sequence, equival
 | 1.3 | Endpoint adapted bases | Classical lemma | Defines lower and upper exponent sequences |
 | 2.2 | Local adapted basis | Classical lemma | Produces the vanishing sequence |
 | 2.5 | Cumulative jet-rank defect | New project theorem | Expresses ramification entirely through finite jet ranks |
-| 3.3 | Wronskian common-factor law | Classical lemma | Common content contributes with rank multiplier \(m\) |
+| 3.3 | Wronskian common-factor law | Classical lemma | Common content contributes with rank multiplier $m$ |
 | 3.4 | Euler–ordinary Wronskian relation | Project lemma | Transfers Wronskian geometry to CCA Euler jets |
 | 4.1 | Local Wronskian order | Classical theorem | Ramification equals Wronskian multiplicity |
-| 4.5 | Projective Wronskian conservation | Classical theorem | Total ramification equals \(m(N-m+1)\) |
+| 4.5 | Projective Wronskian conservation | Classical theorem | Total ramification equals $m(N-m+1)$ |
 | 4.7 | Nonzero affine ramification budget | New project theorem | Exact span of the Wronskian controls all nonzero points |
-| 5.2 | Cyclotomic Wronskian valuation | Main project theorem | \(v_{\Phi_d}(W_V)=\operatorname{Ram}_d(V)\) |
+| 5.2 | Cyclotomic Wronskian valuation | Main project theorem | $v_{\Phi_d}(W_V)=\operatorname{Ram}_d(V)$ |
 | 5.3 | Global Cyclotomic Grassmann–Wronskian Budget | Main project theorem | Global all-context arbitrary-rank bound |
 | 5.4 | Cyclotomic/noncyclotomic decomposition | New project theorem | Identifies the exact missing budget |
-| 6.3 | Content–ramification decomposition | Main project theorem | \(\operatorname{Ram}_d=mc_d+\rho_d\) |
+| 6.3 | Content–ramification decomposition | Main project theorem | $\operatorname{Ram}_d=mc_d+\rho_d$ |
 | 6.4 | Global content–residual budget | Main project theorem | Unifies mandatory factors and exceptional cancellation |
 | 7.1 | Global cyclotomic jet-rank budget | Main project theorem | Bounds cumulative rank loss over all contexts |
 | 7.3 | Global rank-obstruction certificate | Algorithmic theorem | Excess local degeneracy certifies dependence |
 | 8.1 | Rank-two excess law | Corollary | Simple collisions have zero residual ramification |
-| 9.1 | Gaussian unramifiedness at \(q=1\) | Corollary of Part XIV | Embeds Jet–Vandermonde rigidity into the global theory |
+| 9.1 | Gaussian unramifiedness at $q=1$ | Corollary of Part XIV | Embeds Jet–Vandermonde rigidity into the global theory |
 | 9.3 | Global Gaussian-row ramification budget | New project theorem | Controls all cyclotomic contexts of a selected row |
 | 9.4 | Stable content–ramification decomposition | New project theorem | Charges Part II content against the Wronskian budget |
 | 10.1 | Schubert codimension formula | Classical theorem | Gives the Grassmannian meaning of ramification |
@@ -2852,17 +2852,17 @@ The correct arbitrary-rank invariant is the complete vanishing sequence, equival
 
 Part II established the first exact Gaussian collision layer:
 
-\[
+$$
 \boxed{
 \text{pairwise root collision}
 \longrightarrow
 \text{simple or higher cyclotomic contact}.
 }
-\]
+$$
 
 Part VIII established the global rank-one law:
 
-\[
+$$
 \boxed{
 \text{one polynomial}
 \longrightarrow
@@ -2870,54 +2870,54 @@ Part VIII established the global rank-one law:
 \le
 \text{support span}.
 }
-\]
+$$
 
 Part XIV established optimal arbitrary-rank rigidity at one distinguished context:
 
-\[
+$$
 \boxed{
 \text{Gaussian row at }q=1
 \longrightarrow
 \text{vanishing sequence }0,1,\ldots,m-1.
 }
-\]
+$$
 
 Part XV places all three inside one exact geometric object: the Wronskian of the polynomial space.
 
 At every point,
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_p(V)
 =
 \operatorname{ord}_pW_V.
 }
-\]
+$$
 
 Globally,
 
-\[
+$$
 \boxed{
 \sum_{p\in\mathbb P^1}
 \operatorname{Ram}_p(V)
 =
 m(N-m+1).
 }
-\]
+$$
 
 At cyclotomic points,
 
-\[
+$$
 \boxed{
  v_{\Phi_d}(W_V)
 =
 \operatorname{Ram}_d(V).
 }
-\]
+$$
 
 Therefore
 
-\[
+$$
 \boxed{
 \sum_d\varphi(d)\operatorname{Ram}_d(V)
 \le
@@ -2925,11 +2925,11 @@ Therefore
 \le
 m(N-m+1).
 }
-\]
+$$
 
 The local invariant admits three exactly equivalent forms:
 
-\[
+$$
 \boxed{
 \begin{aligned}
 \operatorname{Ram}_d(V)
@@ -2942,21 +2942,21 @@ The local invariant admits three exactly equivalent forms:
 \bigl(\min(m,r)-\operatorname{rank}J_{d,r}\bigr).
 \end{aligned}
 }
-\]
+$$
 
 After separating common content,
 
-\[
+$$
 \boxed{
 \operatorname{Ram}_d(V)
 =
 m c_d(V)+\rho_d(V).
 }
-\]
+$$
 
 Thus the entire theory now has a common conservation law:
 
-\[
+$$
 \boxed{
 \text{mandatory cyclotomic depth}
 +
@@ -2968,11 +2968,11 @@ Thus the entire theory now has a common conservation law:
 =
 \text{Grassmannian dimension}.
 }
-\]
+$$
 
 For Gaussian blocks, this means:
 
-\[
+$$
 \boxed{
 \text{Part II content}
 +
@@ -2982,7 +2982,7 @@ For Gaussian blocks, this means:
 \subseteq
 \text{one exact Wronskian divisor}.
 }
-\]
+$$
 
 The theory has therefore moved from arithmetic of individual coefficients and pairwise collisions to the global cyclotomic geometry of an entire polynomial space.
 
